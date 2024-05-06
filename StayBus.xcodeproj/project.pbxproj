@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C58EC2112BE90753005E88E4 /* StayBusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58EC2102BE90753005E88E4 /* StayBusApp.swift */; };
+		C58EC2132BE90753005E88E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58EC2122BE90753005E88E4 /* ContentView.swift */; };
+		C58EC2152BE90754005E88E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C58EC2142BE90754005E88E4 /* Assets.xcassets */; };
+		C58EC2182BE90754005E88E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C58EC2172BE90754005E88E4 /* Preview Assets.xcassets */; };
+		C58EC2222BE90755005E88E4 /* StayBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58EC2212BE90755005E88E4 /* StayBusTests.swift */; };
+		C58EC22C2BE90755005E88E4 /* StayBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58EC22B2BE90755005E88E4 /* StayBusUITests.swift */; };
+		C58EC22E2BE90755005E88E4 /* StayBusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58EC22D2BE90755005E88E4 /* StayBusUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C58EC21E2BE90755005E88E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C58EC2052BE90753005E88E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C58EC20C2BE90753005E88E4;
+			remoteInfo = StayBus;
+		};
+		C58EC2282BE90755005E88E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C58EC2052BE90753005E88E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C58EC20C2BE90753005E88E4;
+			remoteInfo = StayBus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C58EC20D2BE90753005E88E4 /* StayBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StayBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C58EC2102BE90753005E88E4 /* StayBusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayBusApp.swift; sourceTree = "<group>"; };
+		C58EC2122BE90753005E88E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C58EC2142BE90754005E88E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C58EC2172BE90754005E88E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C58EC21D2BE90755005E88E4 /* StayBusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StayBusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C58EC2212BE90755005E88E4 /* StayBusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayBusTests.swift; sourceTree = "<group>"; };
+		C58EC2272BE90755005E88E4 /* StayBusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StayBusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C58EC22B2BE90755005E88E4 /* StayBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayBusUITests.swift; sourceTree = "<group>"; };
+		C58EC22D2BE90755005E88E4 /* StayBusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayBusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C58EC20A2BE90753005E88E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C58EC21A2BE90755005E88E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C58EC2242BE90755005E88E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C58EC2042BE90753005E88E4 = {
+			isa = PBXGroup;
+			children = (
+				C58EC20F2BE90753005E88E4 /* StayBus */,
+				C58EC2202BE90755005E88E4 /* StayBusTests */,
+				C58EC22A2BE90755005E88E4 /* StayBusUITests */,
+				C58EC20E2BE90753005E88E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C58EC20E2BE90753005E88E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C58EC20D2BE90753005E88E4 /* StayBus.app */,
+				C58EC21D2BE90755005E88E4 /* StayBusTests.xctest */,
+				C58EC2272BE90755005E88E4 /* StayBusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C58EC20F2BE90753005E88E4 /* StayBus */ = {
+			isa = PBXGroup;
+			children = (
+				C58EC2102BE90753005E88E4 /* StayBusApp.swift */,
+				C58EC2122BE90753005E88E4 /* ContentView.swift */,
+				C58EC2142BE90754005E88E4 /* Assets.xcassets */,
+				C58EC2162BE90754005E88E4 /* Preview Content */,
+			);
+			path = StayBus;
+			sourceTree = "<group>";
+		};
+		C58EC2162BE90754005E88E4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C58EC2172BE90754005E88E4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C58EC2202BE90755005E88E4 /* StayBusTests */ = {
+			isa = PBXGroup;
+			children = (
+				C58EC2212BE90755005E88E4 /* StayBusTests.swift */,
+			);
+			path = StayBusTests;
+			sourceTree = "<group>";
+		};
+		C58EC22A2BE90755005E88E4 /* StayBusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C58EC22B2BE90755005E88E4 /* StayBusUITests.swift */,
+				C58EC22D2BE90755005E88E4 /* StayBusUITestsLaunchTests.swift */,
+			);
+			path = StayBusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C58EC20C2BE90753005E88E4 /* StayBus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C58EC2312BE90755005E88E4 /* Build configuration list for PBXNativeTarget "StayBus" */;
+			buildPhases = (
+				C58EC2092BE90753005E88E4 /* Sources */,
+				C58EC20A2BE90753005E88E4 /* Frameworks */,
+				C58EC20B2BE90753005E88E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StayBus;
+			productName = StayBus;
+			productReference = C58EC20D2BE90753005E88E4 /* StayBus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C58EC21C2BE90755005E88E4 /* StayBusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C58EC2342BE90755005E88E4 /* Build configuration list for PBXNativeTarget "StayBusTests" */;
+			buildPhases = (
+				C58EC2192BE90755005E88E4 /* Sources */,
+				C58EC21A2BE90755005E88E4 /* Frameworks */,
+				C58EC21B2BE90755005E88E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C58EC21F2BE90755005E88E4 /* PBXTargetDependency */,
+			);
+			name = StayBusTests;
+			productName = StayBusTests;
+			productReference = C58EC21D2BE90755005E88E4 /* StayBusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C58EC2262BE90755005E88E4 /* StayBusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C58EC2372BE90755005E88E4 /* Build configuration list for PBXNativeTarget "StayBusUITests" */;
+			buildPhases = (
+				C58EC2232BE90755005E88E4 /* Sources */,
+				C58EC2242BE90755005E88E4 /* Frameworks */,
+				C58EC2252BE90755005E88E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C58EC2292BE90755005E88E4 /* PBXTargetDependency */,
+			);
+			name = StayBusUITests;
+			productName = StayBusUITests;
+			productReference = C58EC2272BE90755005E88E4 /* StayBusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C58EC2052BE90753005E88E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					C58EC20C2BE90753005E88E4 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					C58EC21C2BE90755005E88E4 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = C58EC20C2BE90753005E88E4;
+					};
+					C58EC2262BE90755005E88E4 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = C58EC20C2BE90753005E88E4;
+					};
+				};
+			};
+			buildConfigurationList = C58EC2082BE90753005E88E4 /* Build configuration list for PBXProject "StayBus" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C58EC2042BE90753005E88E4;
+			productRefGroup = C58EC20E2BE90753005E88E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C58EC20C2BE90753005E88E4 /* StayBus */,
+				C58EC21C2BE90755005E88E4 /* StayBusTests */,
+				C58EC2262BE90755005E88E4 /* StayBusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C58EC20B2BE90753005E88E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C58EC2182BE90754005E88E4 /* Preview Assets.xcassets in Resources */,
+				C58EC2152BE90754005E88E4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C58EC21B2BE90755005E88E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C58EC2252BE90755005E88E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C58EC2092BE90753005E88E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C58EC2132BE90753005E88E4 /* ContentView.swift in Sources */,
+				C58EC2112BE90753005E88E4 /* StayBusApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C58EC2192BE90755005E88E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C58EC2222BE90755005E88E4 /* StayBusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C58EC2232BE90755005E88E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C58EC22E2BE90755005E88E4 /* StayBusUITestsLaunchTests.swift in Sources */,
+				C58EC22C2BE90755005E88E4 /* StayBusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C58EC21F2BE90755005E88E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C58EC20C2BE90753005E88E4 /* StayBus */;
+			targetProxy = C58EC21E2BE90755005E88E4 /* PBXContainerItemProxy */;
+		};
+		C58EC2292BE90755005E88E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C58EC20C2BE90753005E88E4 /* StayBus */;
+			targetProxy = C58EC2282BE90755005E88E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C58EC22F2BE90755005E88E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C58EC2302BE90755005E88E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C58EC2322BE90755005E88E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StayBus/Preview Content\"";
+				DEVELOPMENT_TEAM = 6QJCXQBJ57;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jason.Zhu.StayBus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C58EC2332BE90755005E88E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StayBus/Preview Content\"";
+				DEVELOPMENT_TEAM = 6QJCXQBJ57;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jason.Zhu.StayBus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C58EC2352BE90755005E88E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QJCXQBJ57;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jason.Zhu.StayBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StayBus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StayBus";
+			};
+			name = Debug;
+		};
+		C58EC2362BE90755005E88E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QJCXQBJ57;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jason.Zhu.StayBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StayBus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StayBus";
+			};
+			name = Release;
+		};
+		C58EC2382BE90755005E88E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QJCXQBJ57;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jason.Zhu.StayBusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StayBus;
+			};
+			name = Debug;
+		};
+		C58EC2392BE90755005E88E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QJCXQBJ57;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jason.Zhu.StayBusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StayBus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C58EC2082BE90753005E88E4 /* Build configuration list for PBXProject "StayBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C58EC22F2BE90755005E88E4 /* Debug */,
+				C58EC2302BE90755005E88E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C58EC2312BE90755005E88E4 /* Build configuration list for PBXNativeTarget "StayBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C58EC2322BE90755005E88E4 /* Debug */,
+				C58EC2332BE90755005E88E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C58EC2342BE90755005E88E4 /* Build configuration list for PBXNativeTarget "StayBusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C58EC2352BE90755005E88E4 /* Debug */,
+				C58EC2362BE90755005E88E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C58EC2372BE90755005E88E4 /* Build configuration list for PBXNativeTarget "StayBusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C58EC2382BE90755005E88E4 /* Debug */,
+				C58EC2392BE90755005E88E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C58EC2052BE90753005E88E4 /* Project object */;
+}
