@@ -18,7 +18,3 @@ struct HeaderLoginView: View {
         }
     }
 }
-
-#Preview {
-    LoginHeaderView()
-}

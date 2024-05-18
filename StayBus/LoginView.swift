@@ -16,48 +16,23 @@ struct LoginView: View {
     @State private var confirmPassword = ""
     
     var body: some View {
-        VStack {
-            HStack {
-                Spacer()
-                Image("Logo") // Replace "yourLogo" with the actual name of your logo in the asset catalog
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: UIScreen.main.bounds.width / 3) // Adjusting the logo size based on screen width
-                    .padding(.top, 5.0)
-                    .padding(.trailing, 20.0) // Adjust top padding as needed
-            }
+        NavigationStack {
             VStack {
-                LottieView(animation: .named("bus"))
+                HStack {
+                    Spacer()
+                    Image("Logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: UIScreen.main.bounds.width / 3.4)
+                        .padding(.top, 5.0)
+                        .padding(.trailing, 20.0)
+                }
+                
+                LottieView(animation: .named("bus_new"))
                     .looping()
-                HStack {
-                    Text("Log In")
-                        .font(.system(size: 40))
-                        .fontWeight(.bold)
-                    Spacer()
-                }
-                .padding(.leading, 20.0)
-                HStack {
-                    Text("Welcome Back")
-                        .font(.system(size: 20))
-                        .foregroundColor(Color(hex: "#A0A0A0"))
-                    Spacer()
-                }
-                .padding(.leading, 20.0)
-                HStack {
-                    Text("Please Enter Your Details.")
-                        .font(.system(size: 20))
-                        .foregroundColor(Color(hex: "#A0A0A0"))
-                    Spacer()
-                }
-                .padding(.leading, 20.0)
+                    .padding(30)
                 
-                
-                Picker("Mode", selection: $isLogin) {
-                    Text("Login").tag(true)
-                    Text("Register").tag(false)
-                }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding()
+                HeaderLoginView()
                 
                 TextField("Email", text: $email)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -70,13 +45,15 @@ struct LoginView: View {
                 
                 HStack{
                     Spacer()
-                    Button("Forgot Password") {
-                        
+                    NavigationLink {
+                        ForgotPassView()
+                    } label: {
+                        Text("Forgot Password")
+                            .font(.system(size: 15))
+                            .padding(.trailing, 20)
                     }
-                    .font(.system(size: 15))
-                    .padding(.trailing, 20)
+                    
                 }
-                
                 
                 if !isLogin {
                     SecureField("Confirm Password", text: $confirmPassword)
@@ -106,16 +83,18 @@ struct LoginView: View {
                     Text("Don’t have an account?")
                         .font(.system(size: 15))
                         .fontWeight(.thin)
-                    Button("Sign Up") {
+                    NavigationLink {
+                        RegistrationView()
+                    } label: {
+                        Text("Sign Up")
                     }
-                    .font(.system(size: 15))
-                    .underline()
+                    
                 }
-                .padding(.bottom, 20)
+                .padding(.bottom, 80)
             }
+            .background(Color(hex: "#E2F3FC"))
+            
         }
-        .background(Color(hex: "#E2F3FC"))
-        
     }
     func login() {
         Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
@@ -141,7 +120,7 @@ struct LoginView: View {
 
 struct LoginRegistrationView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginRegistrationView()
+        LoginView()
     }
 }
 

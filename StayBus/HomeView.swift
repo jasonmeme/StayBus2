@@ -7,12 +7,16 @@
 
 import SwiftUI
 
-struct Home: View {
+struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
+            Text("Tab Content 1").tabItem { Text("Home") }.tag(1)
+            MapView().tabItem { Text("Profile") }.tag(2)
+            ProfileView().tabItem { Text("Map") }.tag(3)
+        }
     }
 }
 
 #Preview {
-    Home()
+    HomeView()
 }
