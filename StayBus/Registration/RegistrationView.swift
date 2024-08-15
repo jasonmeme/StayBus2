@@ -8,128 +8,116 @@
 import SwiftUI
 import Firebase
 
-struct RegistrationView: View {
-    @State private var isLogin = true // Toggle between login and registration
-    @State private var email = ""
-    @State private var password = ""
-    @State private var confirmPassword = ""
+
+@MainActor
+final class RegistrationViewModel: ObservableObject {
+    @Published var fullName = ""
+    @Published var email = ""
+    @Published var password = ""
+    @Published var errorMessage: String?
+    @Published var isLoading = false
     
-    var body: some View {
-        VStack {
-            HStack {
-                Spacer()
-                Image("Logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: UIScreen.main.bounds.width / 3.4)
-                    .padding(.top, 5.0)
-                    .padding(.trailing, 20.0)
-            }
-            VStack {
-                HStack {
-                    Text("Sign Up")
-                        .font(.system(size: 40))
-                        .fontWeight(.bold)
-                    Spacer()
-                }
-                .padding(.leading, 20.0)
-                HStack {
-                    Text("New Here?")
-                        .font(.system(size: 20))
-                        .foregroundColor(Color(hex: "#A0A0A0"))
-                    Spacer()
-                }
-                .padding(.leading, 20.0)
-                HStack {
-                    Text("Please Enter Your Details.")
-                        .font(.system(size: 20))
-                        .foregroundColor(Color(hex: "#A0A0A0"))
-                    Spacer()
-                }
-                .padding(.leading, 20.0)
-                
-                TextField("Full Name", text: $email)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(.horizontal, 20)
-                
-                TextField("Email", text: $email)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(.top, 10)
-                    .padding(.horizontal, 20)
-                
-                SecureField("Password", text: $password)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(.horizontal, 20)
-                    .padding(.top, 10)
-                
-                HStack{
-                    Spacer()
-                    Button("Forgot Password") {
-                        
-                    }
-                    .font(.system(size: 15))
-                    .padding(.trailing, 20)
-                }
-                
-                
-                if !isLogin {
-                    SecureField("Confirm Password", text: $confirmPassword)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding()
-                }
-                
-                Button(isLogin ? "Login" : "Register") {
-                    if isLogin {
-                        login()
-                        print("Login requested")
-                    } else {
-                        register()
-                        print("Registration requested")
-                    }
-                }
-                .frame(maxWidth: .infinity)
-                .padding(12.0)
-                .foregroundColor(.white)
-                .background(Color.blue)
-                .font(.system(size: 20))
-                .cornerRadius(10)
-                .padding(.horizontal, 20)
-                .padding(.top, 20)
-                
-                HStack {
-                    Text("Don’t have an account?")
-                        .font(.system(size: 15))
-                        .fontWeight(.thin)
-                    Button("Sign Up") {
-                    }
-                    .font(.system(size: 15))
-                    .underline()
-                }
-                .padding(.bottom, 20)
-            }
+    func register() async {
+        guard !fullName.isEmpty, !email.isEmpty, !password.isEmpty else {
+            errorMessage = "Please fill in all fields."
+            return
         }
         
+        isLoading = true
+        do {
+            try await AuthenticationManager.shared.createUser(email: email, password: password)
+            // TODO: Save full name to user profile or Firestore
+        } catch {
+            if let authError = error as? AuthError {
+                errorMessage = authError.localizedDescription
+            } else {
+                errorMessage = error.localizedDescription
+            }
+        }
+        isLoading = false
+    }
+}
+
+struct RegistrationView: View {
+    @StateObject private var viewModel = RegistrationViewModel()
+    @EnvironmentObject private var authManager: AuthenticationManager
+    @Environment(\.dismiss) private var dismiss
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            Spacer()
+            VStack(alignment: .leading, spacing: 5) {
+                Text("Sign Up")
+                    .font(.system(size: 36, weight: .bold))
+                    .foregroundColor(.black)
+                
+                Text("New Here?")
+                    .font(.system(size: 18))
+                    .foregroundColor(.gray)
+                
+                Text("Please enter your details")
+                    .font(.system(size: 18))
+                    .foregroundColor(.gray)
+            }
+            .padding(.top, 60)
+            
+            VStack(spacing: 15) {
+                TextField("Full Name", text: $viewModel.fullName)
+                    .textFieldStyle(ModernTextFieldStyle())
+                
+                TextField("Email", text: $viewModel.email)
+                    .textFieldStyle(ModernTextFieldStyle())
+                    .autocapitalization(.none)
+                
+                SecureField("Password", text: $viewModel.password)
+                    .textFieldStyle(ModernTextFieldStyle())
+            }
+            .padding(.top, 20)
+            
+            if let errorMessage = viewModel.errorMessage {
+                Text(errorMessage)
+                    .foregroundColor(.red)
+                    .font(.system(size: 14))
+            }
+            
+            CustomButton(title: "Register", action: {
+                Task {
+                    await viewModel.register()
+                }
+            }, isPrimary: true)
+            .padding(.top, 20)
+            .disabled(viewModel.isLoading)
+            .opacity(viewModel.isLoading ? 0.5 : 1)
+            .overlay(
+                Group {
+                    if viewModel.isLoading {
+                        ProgressView()
+                    }
+                }
+            )
+            
+            Spacer()
+            
+            HStack {
+                Spacer()
+                Button("Already have an account? Sign In") {
+                    dismiss()
+                }
+                .foregroundColor(Color(hex: "#407D9F"))
+                Spacer()
+            }
+            .padding(.bottom, 20)
+            Spacer()
+        }
+        .padding(.horizontal, 40)
         .background(Color(hex: "#E2F3FC"))
-    }
-    
-    func login() {
-        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
-            if let error = error {
-                print("Login error: \(error.localizedDescription)")
-            } else {
-                print("Login successful!")
-            }
-        }
-    }
-    
-    func register() {
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            if let error = error {
-                print("Registration error: \(error.localizedDescription)")
-            } else {
-                print("Registration successful!")
-            }
-        }
+        .edgesIgnoringSafeArea(.all)
+        .onChange(of: authManager.isAuthenticated) { _, newValue in
+                    if newValue {
+                        // User is authenticated, dismiss this view
+                        dismiss()
+                    }
+                }
     }
 }
 

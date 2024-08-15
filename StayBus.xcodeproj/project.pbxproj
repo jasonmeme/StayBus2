@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C50021512BFFDD6E003773D6 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C50021502BFFDD6E003773D6 /* FirebaseAnalyticsSwift */; };
+		C50021542BFFE408003773D6 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50021532BFFE408003773D6 /* AuthenticationManager.swift */; };
+		C50021562BFFE954003773D6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50021552BFFE954003773D6 /* RootView.swift */; };
 		C502F0A22BF8D30F007762DF /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502F0A12BF8D30F007762DF /* LabelView.swift */; };
-		C502F0A42BF8D3FF007762DF /* HeaderLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502F0A32BF8D3FF007762DF /* HeaderLoginView.swift */; };
-		C502F0A62BF8D71D007762DF /* FieldVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502F0A52BF8D71D007762DF /* FieldVIew.swift */; };
+		C502F0A62BF8D71D007762DF /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C502F0A52BF8D71D007762DF /* FieldView.swift */; };
 		C502F0A82BF8DA28007762DF /* bus_new.json in Resources */ = {isa = PBXBuildFile; fileRef = C502F0A72BF8DA28007762DF /* bus_new.json */; };
 		C52244B62BF2FE1200541F41 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52244B52BF2FE1200541F41 /* RegistrationView.swift */; };
 		C52244B82BF301CA00541F41 /* ForgotPassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52244B72BF301CA00541F41 /* ForgotPassView.swift */; };
-		C52244BA2BF301DF00541F41 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52244B92BF301DF00541F41 /* HomeView.swift */; };
+		C52244BA2BF301DF00541F41 /* BeginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52244B92BF301DF00541F41 /* BeginView.swift */; };
 		C52244BC2BF301FD00541F41 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52244BB2BF301FD00541F41 /* MapView.swift */; };
 		C550EBD52BF416EA00936274 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550EBD42BF416EA00936274 /* ProfileView.swift */; };
+		C57037E12BFAC91B00321B6B /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57037E02BFAC91B00321B6B /* SpinnerView.swift */; };
 		C57358452BEE98DB00C4AE4F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57358442BEE98DB00C4AE4F /* LoginView.swift */; };
 		C57358482BEE9D0C00C4AE4F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C57358472BEE9D0C00C4AE4F /* FirebaseAnalytics */; };
 		C573584A2BEE9D0C00C4AE4F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C57358492BEE9D0C00C4AE4F /* FirebaseAuth */; };
@@ -44,6 +47,8 @@
 		C58EC2222BE90755005E88E4 /* StayBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58EC2212BE90755005E88E4 /* StayBusTests.swift */; };
 		C58EC22C2BE90755005E88E4 /* StayBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58EC22B2BE90755005E88E4 /* StayBusUITests.swift */; };
 		C58EC22E2BE90755005E88E4 /* StayBusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58EC22D2BE90755005E88E4 /* StayBusUITestsLaunchTests.swift */; };
+		C5A9D45C2C6E59CE00DDC34A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A9D45B2C6E59CE00DDC34A /* CustomButton.swift */; };
+		C5C409372BFC204C004329A5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C409362BFC204C004329A5 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,15 +69,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C50021532BFFE408003773D6 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		C50021552BFFE954003773D6 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		C502F0A12BF8D30F007762DF /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
-		C502F0A32BF8D3FF007762DF /* HeaderLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLoginView.swift; sourceTree = "<group>"; };
-		C502F0A52BF8D71D007762DF /* FieldVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldVIew.swift; sourceTree = "<group>"; };
+		C502F0A52BF8D71D007762DF /* FieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
 		C502F0A72BF8DA28007762DF /* bus_new.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bus_new.json; sourceTree = "<group>"; };
 		C52244B52BF2FE1200541F41 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		C52244B72BF301CA00541F41 /* ForgotPassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassView.swift; sourceTree = "<group>"; };
-		C52244B92BF301DF00541F41 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C52244B92BF301DF00541F41 /* BeginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginView.swift; sourceTree = "<group>"; };
 		C52244BB2BF301FD00541F41 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		C550EBD42BF416EA00936274 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C57037E02BFAC91B00321B6B /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		C57037E22BFB018600321B6B /* StayBusDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StayBusDebug.entitlements; sourceTree = "<group>"; };
 		C57358442BEE98DB00C4AE4F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C57358552BEF7A2A00C4AE4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C57358612BEF9F9A00C4AE4F /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
@@ -98,6 +106,8 @@
 		C58EC2272BE90755005E88E4 /* StayBusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StayBusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58EC22B2BE90755005E88E4 /* StayBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayBusUITests.swift; sourceTree = "<group>"; };
 		C58EC22D2BE90755005E88E4 /* StayBusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayBusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C5A9D45B2C6E59CE00DDC34A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		C5C409362BFC204C004329A5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = Login/HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,7 @@
 				C57358592BEF85A400C4AE4F /* Lottie in Frameworks */,
 				C573584E2BEE9D0C00C4AE4F /* FirebaseFirestore in Frameworks */,
 				C57358502BEE9D0C00C4AE4F /* FirebaseMessaging in Frameworks */,
+				C50021512BFFDD6E003773D6 /* FirebaseAnalyticsSwift in Frameworks */,
 				C57358482BEE9D0C00C4AE4F /* FirebaseAnalytics in Frameworks */,
 				C573584A2BEE9D0C00C4AE4F /* FirebaseAuth in Frameworks */,
 				C57358522BEE9D0C00C4AE4F /* FirebaseStorage in Frameworks */,
@@ -132,6 +143,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C500214F2BFFDD6E003773D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C50021522BFFDEFF003773D6 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C50021532BFFE408003773D6 /* AuthenticationManager.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C5594F2D2BF9119F00342E2D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C52244B72BF301CA00541F41 /* ForgotPassView.swift */,
+				C57358442BEE98DB00C4AE4F /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C5594F2E2BF911AF00342E2D /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				C52244B52BF2FE1200541F41 /* RegistrationView.swift */,
+				C57037E02BFAC91B00321B6B /* SpinnerView.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
 		C573585C2BEF862E00C4AE4F /* Lottie Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +209,7 @@
 				C58EC2202BE90755005E88E4 /* StayBusTests */,
 				C58EC22A2BE90755005E88E4 /* StayBusUITests */,
 				C58EC20E2BE90753005E88E4 /* Products */,
+				C500214F2BFFDD6E003773D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,17 +226,20 @@
 		C58EC20F2BE90753005E88E4 /* StayBus */ = {
 			isa = PBXGroup;
 			children = (
+				C50021552BFFE954003773D6 /* RootView.swift */,
+				C50021522BFFDEFF003773D6 /* Authentication */,
+				C57037E22BFB018600321B6B /* StayBusDebug.entitlements */,
+				C5594F2E2BF911AF00342E2D /* Registration */,
+				C5594F2D2BF9119F00342E2D /* Login */,
 				C502F0A12BF8D30F007762DF /* LabelView.swift */,
-				C502F0A32BF8D3FF007762DF /* HeaderLoginView.swift */,
 				C550EBD42BF416EA00936274 /* ProfileView.swift */,
-				C52244B92BF301DF00541F41 /* HomeView.swift */,
+				C52244B92BF301DF00541F41 /* BeginView.swift */,
+				C5C409362BFC204C004329A5 /* HomeView.swift */,
 				C52244BB2BF301FD00541F41 /* MapView.swift */,
-				C52244B72BF301CA00541F41 /* ForgotPassView.swift */,
+				C5A9D45B2C6E59CE00DDC34A /* CustomButton.swift */,
 				C58EC2102BE90753005E88E4 /* StayBusApp.swift */,
 				C58EC2122BE90753005E88E4 /* ContentView.swift */,
-				C52244B52BF2FE1200541F41 /* RegistrationView.swift */,
-				C57358442BEE98DB00C4AE4F /* LoginView.swift */,
-				C502F0A52BF8D71D007762DF /* FieldVIew.swift */,
+				C502F0A52BF8D71D007762DF /* FieldView.swift */,
 				C57358612BEF9F9A00C4AE4F /* ColorExtensions.swift */,
 				C58EC2142BE90754005E88E4 /* Assets.xcassets */,
 				C573587E2BF02F2700C4AE4F /* Info.plist */,
@@ -252,6 +300,7 @@
 				C573584F2BEE9D0C00C4AE4F /* FirebaseMessaging */,
 				C57358512BEE9D0C00C4AE4F /* FirebaseStorage */,
 				C57358582BEF85A400C4AE4F /* Lottie */,
+				C50021502BFFDD6E003773D6 /* FirebaseAnalyticsSwift */,
 			);
 			productName = StayBus;
 			productReference = C58EC20D2BE90753005E88E4 /* StayBus.app */;
@@ -385,17 +434,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				C52244B82BF301CA00541F41 /* ForgotPassView.swift in Sources */,
-				C502F0A62BF8D71D007762DF /* FieldVIew.swift in Sources */,
+				C50021542BFFE408003773D6 /* AuthenticationManager.swift in Sources */,
+				C5A9D45C2C6E59CE00DDC34A /* CustomButton.swift in Sources */,
+				C502F0A62BF8D71D007762DF /* FieldView.swift in Sources */,
+				C50021562BFFE954003773D6 /* RootView.swift in Sources */,
+				C5C409372BFC204C004329A5 /* HomeView.swift in Sources */,
 				C502F0A22BF8D30F007762DF /* LabelView.swift in Sources */,
 				C52244BC2BF301FD00541F41 /* MapView.swift in Sources */,
 				C57358452BEE98DB00C4AE4F /* LoginView.swift in Sources */,
+				C57037E12BFAC91B00321B6B /* SpinnerView.swift in Sources */,
 				C57358622BEF9F9A00C4AE4F /* ColorExtensions.swift in Sources */,
 				C58EC2132BE90753005E88E4 /* ContentView.swift in Sources */,
 				C52244B62BF2FE1200541F41 /* RegistrationView.swift in Sources */,
-				C502F0A42BF8D3FF007762DF /* HeaderLoginView.swift in Sources */,
 				C58EC2112BE90753005E88E4 /* StayBusApp.swift in Sources */,
 				C550EBD52BF416EA00936274 /* ProfileView.swift in Sources */,
-				C52244BA2BF301DF00541F41 /* HomeView.swift in Sources */,
+				C52244BA2BF301DF00541F41 /* BeginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +609,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StayBus/StayBusDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StayBus/Preview Content\"";
@@ -750,6 +804,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C50021502BFFDD6E003773D6 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C57358462BEE9D0C00C4AE4F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
 		C57358472BEE9D0C00C4AE4F /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C57358462BEE9D0C00C4AE4F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

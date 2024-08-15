@@ -9,106 +9,118 @@ import SwiftUI
 import Firebase
 import Lottie
 
+@MainActor
+final class LoginViewModel: ObservableObject {
+    @Published var email = ""
+    @Published var password = ""
+    @Published var errorMessage: String?
+    @Published var isLoading = false
+    
+    func signIn() async {
+        guard !email.isEmpty, !password.isEmpty else {
+            errorMessage = "Please enter both email and password."
+            return
+        }
+        
+        isLoading = true
+        do {
+            try await AuthenticationManager.shared.signIn(email: email, password: password)
+        } catch {
+            if let authError = error as? AuthError {
+                errorMessage = authError.localizedDescription
+            } else {
+                errorMessage = error.localizedDescription
+            }
+        }
+        isLoading = false
+    }
+}
+
 struct LoginView: View {
-    @State private var isLogin = true // Toggle between login and registration
-    @State private var email = ""
-    @State private var password = ""
-    @State private var confirmPassword = ""
+    @StateObject private var viewModel = LoginViewModel()
+    @EnvironmentObject private var authManager: AuthenticationManager
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-        NavigationStack {
-            VStack {
-                HStack {
-                    Spacer()
-                    Image("Logo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: UIScreen.main.bounds.width / 3.4)
-                        .padding(.top, 5.0)
-                        .padding(.trailing, 20.0)
-                }
+        VStack(alignment: .leading, spacing: 20) {
+            Spacer()
+            VStack(alignment: .leading, spacing: 5) {
+                Text("Log In")
+                    .font(.system(size: 36, weight: .bold))
+                    .foregroundColor(.black)
                 
-                LottieView(animation: .named("bus_new"))
-                    .looping()
-                    .padding(30)
+                Text("Welcome Back")
+                    .font(.system(size: 18))
+                    .foregroundColor(.gray)
                 
-                HeaderLoginView()
-                
-                TextField("Email", text: $email)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(.horizontal, 20)
-                
-                SecureField("Password", text: $password)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(.horizontal, 20)
-                    .padding(.top, 10)
-                
-                HStack{
-                    Spacer()
-                    NavigationLink {
-                        ForgotPassView()
-                    } label: {
-                        Text("Forgot Password")
-                            .font(.system(size: 15))
-                            .padding(.trailing, 20)
-                    }
-                    
-                }
-                
-                Button("Login") {
-                    login()
-                }
-                .frame(maxWidth: .infinity)
-                .padding(12.0)
-                .foregroundColor(.white)
-                .background(Color.blue)
-                .font(.system(size: 20))
-                .cornerRadius(10)
-                .padding(.horizontal, 20)
-                .padding(.top, 20)
-                
-                HStack {
-                    Text("Don’t have an account?")
-                        .font(.system(size: 15))
-                        .fontWeight(.thin)
-                    NavigationLink {
-                        RegistrationView()
-                    } label: {
-                        Text("Sign Up")
-                    }
-                    
-                }
-                .padding(.bottom, 80)
+                Text("Please enter your details")
+                    .font(.system(size: 18))
+                    .foregroundColor(.gray)
             }
-            .background(Color(hex: "#E2F3FC"))
+            .padding(.top, 60)
             
-        }
-    }
-    func login() {
-        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
-            if let error = error {
-                print("Login error: \(error.localizedDescription)")
-            } else {
-                print("Login successful!")
+            VStack(spacing: 15) {
+                TextField("Email", text: $viewModel.email)
+                    .textFieldStyle(ModernTextFieldStyle())
+                
+                SecureField("Password", text: $viewModel.password)
+                    .textFieldStyle(ModernTextFieldStyle())
             }
-        }
-    }
-    
-    func register() {
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            if let error = error {
-                print("Registration error: \(error.localizedDescription)")
-            } else {
-                print("Registration successful!")
+            .padding(.top, 20)
+            
+            if let errorMessage = viewModel.errorMessage {
+                Text(errorMessage)
+                    .foregroundColor(.red)
+                    .font(.system(size: 14))
             }
+            
+            CustomButton(title: "Sign In", action: {
+                Task {
+                    await viewModel.signIn()
+                }
+            }, isPrimary: true)
+            .padding(.top, 20)
+            
+            Spacer()
+            
+            HStack {
+                Spacer()
+                Button("Don't have an account? Sign Up") {
+                    dismiss()
+                }
+                .foregroundColor(Color(hex: "#407D9F"))
+                Spacer()
+            }
+            .padding(.bottom, 20)
+            Spacer()
         }
+        .padding(.horizontal, 40)
+        .background(Color(hex: "#E2F3FC"))
+
+        .edgesIgnoringSafeArea(.all)
+        .onChange(of: authManager.isAuthenticated) { _, newValue in
+                    if newValue {
+                        // User is authenticated, dismiss this view
+                        dismiss()
+                    }
+                }
     }
-    
+}
+
+struct ModernTextFieldStyle: TextFieldStyle {
+    func _body(configuration: TextField<Self._Label>) -> some View {
+        configuration
+            .padding()
+            .background(Color.white)
+            .cornerRadius(10)
+    }
 }
 
 struct LoginRegistrationView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        NavigationStack {
+            LoginView()
+        }
     }
 }
 
