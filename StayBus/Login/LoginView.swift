@@ -55,20 +55,8 @@ struct LoginView: View {
                     
                 }
                 
-                if !isLogin {
-                    SecureField("Confirm Password", text: $confirmPassword)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding()
-                }
-                
-                Button(isLogin ? "Login" : "Register") {
-                    if isLogin {
-                        login()
-                        print("Login requested")
-                    } else {
-                        register()
-                        print("Registration requested")
-                    }
+                Button("Login") {
+                    login()
                 }
                 .frame(maxWidth: .infinity)
                 .padding(12.0)

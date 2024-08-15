@@ -18,12 +18,12 @@ struct RegistrationView: View {
         VStack {
             HStack {
                 Spacer()
-                Image("Logo") // Replace "yourLogo" with the actual name of your logo in the asset catalog
+                Image("Logo")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: UIScreen.main.bounds.width / 3) // Adjusting the logo size based on screen width
+                    .frame(width: UIScreen.main.bounds.width / 3.4)
                     .padding(.top, 5.0)
-                    .padding(.trailing, 20.0) // Adjust top padding as needed
+                    .padding(.trailing, 20.0)
             }
             VStack {
                 HStack {
