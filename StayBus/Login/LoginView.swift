@@ -81,6 +81,8 @@ struct LoginView: View {
             }, isPrimary: true)
             .padding(.top, 20)
             
+            // TODO forgot password
+            
             Spacer()
             
             HStack {

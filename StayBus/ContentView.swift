@@ -8,18 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var authManager = AuthenticationManager.shared
+    @EnvironmentObject private var authManager: AuthenticationManager
     
     var body: some View {
-        NavigationView {
-            Group {
-                if authManager.isAuthenticated {
-                    BeginView()
-                } else {
-                    HomeView()
-                }
+        Group {
+            if authManager.isAuthenticated {
+                BeginView()
+            } else {
+                HomeView()
             }
         }
-        .environmentObject(authManager)
+        .environmentObject(authManager)  // Add this line to ensure child views receive the AuthenticationManager
     }
 }

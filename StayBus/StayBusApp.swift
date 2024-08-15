@@ -23,10 +23,8 @@ struct StayBusApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                ContentView()
-                    .environmentObject(authManager)
-            }
+            ContentView()
+                .environmentObject(authManager)
         }
     }
 }

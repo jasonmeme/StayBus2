@@ -12,6 +12,8 @@ struct HomeView: View {
     @State private var showLogin = false
     @State private var showRegistration = false
     
+    @EnvironmentObject private var authManager: AuthenticationManager
+    
     var body: some View {
         GeometryReader { geometry in
             VStack(spacing: 20) {
@@ -51,12 +53,12 @@ struct HomeView: View {
             .background(
                 LinearGradient(gradient: Gradient(colors: [Color(hex: "#E2F3FC"), Color(hex: "#FFFFFF")]), startPoint: .top, endPoint: .bottom)
             )
-            .navigationDestination(isPresented: $showLogin) {
-                LoginView()
-            }
-            .navigationDestination(isPresented: $showRegistration) {
-                RegistrationView()
-            }
+            .sheet(isPresented: $showLogin) {
+                            LoginView().environmentObject(authManager)
+                        }
+                        .sheet(isPresented: $showRegistration) {
+                            RegistrationView().environmentObject(authManager)
+                        }
         }
     }
 }

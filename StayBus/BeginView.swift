@@ -8,12 +8,36 @@
 import SwiftUI
 
 struct BeginView: View {
+    @EnvironmentObject private var authManager: AuthenticationManager
+    
     var body: some View {
-        TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
-            Text("Tab Content 1").tabItem { Text("Home") }.tag(1)
-            MapView().tabItem { Text("Profile") }.tag(2)
-            ProfileView().tabItem { Text("Map") }.tag(3)
+        TabView {
+            Text("Home")
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+            
+            MapView()
+                .tabItem {
+                    Image(systemName: "map")
+                    Text("Map")
+                }
+            
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Profile")
+                }
         }
+        .environmentObject(authManager)
+    }
+}
+
+struct BeginView_Previews: PreviewProvider {
+    static var previews: some View {
+        BeginView()
+            .environmentObject(AuthenticationManager.shared)
     }
 }
 
