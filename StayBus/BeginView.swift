@@ -12,10 +12,16 @@ struct BeginView: View {
     
     var body: some View {
         TabView {
-            Text("Home")
+            DashboardView()
                 .tabItem {
                     Image(systemName: "house")
                     Text("Home")
+                }
+            
+            RouteListView()
+                .tabItem {
+                    Image(systemName: "list.bullet")
+                    Text("Routes")
                 }
             
             MapView()
@@ -39,8 +45,4 @@ struct BeginView_Previews: PreviewProvider {
         BeginView()
             .environmentObject(AuthenticationManager.shared)
     }
-}
-
-#Preview {
-    HomeView()
 }

@@ -1,0 +1,648 @@
+ROUTE:
+1
+1
+7:31
+148 Amherst Rd
+2
+7:33
+154 Amherst Rd
+3
+7:35
+15 Farmer Rd
+4
+7:37
+19 Mason Rd 
+5
+7:39
+Peaslee / Fields Farm Rd
+6
+7:40
+72 Peaslee Rd
+7
+7:42
+46 Peaslee Rd
+8
+7:43
+34 Peaslee Rd
+9
+7:44
+Haines Ter / Haines Ter
+10
+7:45
+9 Queens Way
+11
+7:47
+22 Old Kings Rd
+12
+7:48
+Old Kings Rd / Regal
+13
+7:49
+Regal / Majestic
+14
+7:52
+71 Peaslee Rd
+15
+7:55
+4 Abbey
+16
+7:56
+Bates / Mary Ann 
+17
+7:58
+Bates / Charles
+18
+8:01
+46 Hansom
+19
+8:02
+Hansom / Hansom 
+20
+8:03
+30 Hansom Rd
+21
+8:04
+20 Hansom Rd
+22
+8:07
+46 Bates Rd
+23
+8:08
+14 Four Winds 
+24
+8:09
+10 Everest Dr.
+ROUTE:
+2
+1
+7:40
+Amherst / Los Primos (dirt area on Amherst)
+2
+7:42
+174 Turkey Hill
+3
+7:43
+12 Bigwood Dr
+4
+7:44
+5 Den Ave.
+5
+7:46
+Wallace Rd / JoEllen
+6
+7:47
+Jo Ellen/Forsythia
+7
+7:49
+4 Stevens 
+8
+7:49
+18 Stevens
+9
+7:50
+10 Berry
+10
+7:51
+30 Amherst 
+11
+7:53
+26 Scott Dr
+12
+7:54
+14 Scott Dr.
+13
+7:55
+Scott / Bryce
+14
+7:56
+Amherst Rd / Watkins Rd 
+15
+7:58
+15 Merrill 
+16
+8:00
+51 Amherst Rd. 
+17
+8:01
+66 Amherst Rd
+18
+8:02
+83 Amherst Rd
+19
+8:02
+91 Amherst Rd 
+20
+8:05
+Naticook Rd / Danforth Rd
+21
+8:06
+Naticook Rd / Hassell Rd 
+22
+8:07
+Naticook Rd / Hutchinson Rd
+23
+8:08
+Naticook Rd / Palmeri Dr./ Cummings
+24
+8:09
+53 Naticook Rd 
+25
+8:10
+88 Naticook Rd 
+26
+8:12
+129 Naticook Rd
+ROUTE:
+3
+1
+7:53
+Dena Ave. / Hawthorne Rd
+2
+7:54
+5 Erik St
+3
+7:55
+26 Erik St
+4
+7:56
+30 Erik St
+5
+7:56
+32 Erik St
+6
+7:57
+45 Erik St.
+7
+7:57
+55 Erik St
+8
+7:58
+50 Erik
+9
+8:00
+54 Dahl Rd
+10
+8:01
+48 Dahl Rd 
+11
+8:02
+29 Dahl Rd 
+12
+8:03
+14 Kyle 
+13
+8:05
+39 Brek Dr. 
+14
+8:05
+32 Brek Dr. 
+15
+8:06
+24 Brek Dr.
+16
+8:07
+16 Brek Dr. 
+17
+8:08
+7 Brek Dr. 
+18
+8:10
+16 Dahl Rd 
+ROUTE:
+4
+1
+7:40
+1 Riverside Dr
+2
+7:40
+6 Riverside Dr
+3
+7:41
+Davidson Rd / Piedmont 
+4
+7:43
+4 Piedmont Ave
+5
+7:45
+167 Amherst Rd
+6
+7:46
+Amherst Rd / Tomasian / Fuller Mill Rd
+7
+7:47
+4 County Rd
+8
+7:48
+5 Savannah Way
+9
+7:48
+9 Savannah Way
+10
+7:49
+12 Springfield Cir.
+11
+7:50
+23 Springfield Cir
+12
+7:51
+28 Springfield Cir
+13
+7:52
+Springfield Cir / Rimmon Ct
+14
+7:53
+45 Springfield Cir
+15
+7:53
+51 Springfield Cir
+16
+7:54
+22 Savannah Way 
+17
+7:56
+102 Seavern's Bridge Rd 
+18
+7:58
+49 Seaverns Bridge Rd
+19
+7:59
+22 Seaverns Bridge Rd
+20
+8:04
+12 Cramer Hill Rd
+21
+8:05
+Cramer Hill / Coles Rock Rd 
+22
+8:06
+16 Seaverns Bridge Rd.
+23
+8:06
+14 Seaverns Bridge Rd
+24
+8:07
+17A Seaverns Bridge Rd 
+25
+8:08
+9 Seaverns Bridge Rd 
+26
+8:09
+P/U @ Merrimack Valley Baptist Church
+27
+8:14
+Continental Blvd / Bailey Ct
+ROUTE:
+5
+1
+7:44
+DW Hwy / Monument
+2
+7:45
+DW Hwy / Angelo Dr 
+3
+7:46
+329  DW Dr.  
+4
+7:47
+76 Island Dr
+5
+7:47
+41 Island Dr
+6
+7:51
+404 DW Hwy
+7
+7:52
+1 Bretton 
+8
+7:53
+Hillcrest / E. Chamberlain
+9
+7:54
+2 Oak St
+10
+7:56
+366 DW - Trampoline Ent.
+11
+7:57
+DW Highway/East Ridge Condos 
+12
+7:59
+DW Hwy / Hoyt St. 
+13
+8:03
+Camp Sargent / Nottingwood Lane 
+14
+8:03
+19 Camp Sargent Rd
+15
+8:04
+5 Whittier 
+16
+8:05
+Whittier Rd / Cranston Cir 
+17
+8:05
+Whittier Rd / Danville Cir 
+18
+8:06
+Whittier Rd / Englewood 
+19
+8:07
+11 Arbor Rd
+20
+8:08
+11 Beech St
+21
+8:08
+20 Beech St.
+22
+8:09
+12 Douglas St.
+23
+8:09
+7 Douglas St
+24
+8:10
+Douglas St / Cedar Rd
+25
+8:11
+4 Cedar Rd 
+26
+8:11
+Camp Sargent Rd / Mall Apt Pth
+ROUTE:
+6
+1
+7:39
+Cota Rd / Erla 
+2
+7:40
+Cota / 2nd Sharon
+3
+7:40
+25 Cota Rd
+4
+7:41
+39 Cota Rd. 
+5
+7:41
+66 Cota Rd.
+6
+7:42
+77 Cota Rd
+7
+7:47
+15 Iris 
+8
+7:48
+5 Iris Dr
+9
+7:49
+2 Penrose 
+10
+7:50
+5 Penrose Ln
+11
+7:51
+5 Jade Rd
+12
+7:52
+89 Turkey Hill Rd
+13
+7:52
+92 Turkey Hill Rd
+14
+7:53
+5 Eden St.
+15
+7:54
+Newton Rd / Bancroft
+16
+7:54
+Bancroft / Rutherford
+17
+7:56
+3 Wildcat Falls 
+18
+7:56
+7 Wildcat Falls 
+19
+7:57
+John / Edward / Wildcat Falls
+20
+7:57
+8 John 
+21
+7:58
+6 W. Chamberlain 
+22
+7:59
+25 W. Chamberlain 
+23
+7:59
+W Chamberlain/ Summit 
+24
+8:00
+30 W. Chamberlain Rd
+25
+8:00
+22 W. Chamberlain Rd
+26
+8:02
+45 Meetinghouse Rd
+27
+8:03
+Meetinghouse/ Nathan Hale 
+28
+8:03
+29 Meetinghouse Rd
+29
+8:04
+Fox Meadow / Riley 
+30
+8:05
+3 Fox Meadow
+ROUTE:
+7
+1
+7:47
+83 / 86 Turkey Hill Rd 
+2
+7:50
+6 Sarah Dr 
+3
+0.68
+10 Sarah Dr
+4
+7:51
+22 Sarah Dr.
+5
+7:52
+Sarah Dr. / Craig Dr.
+6
+7:53
+33 Craig Dr.
+7
+7:54
+Craig Dr. / Kelly Wy 
+8
+7:56
+1 Acacia
+9
+7:57
+8 Northwood Dr.
+10
+7:57
+14 Northwood
+11
+7:58
+18 Northwood 
+12
+8:00
+14 Laurel St
+13
+8:00
+7 Laurel St 
+14
+8:01
+10 Candy Ln 
+15
+8:03
+Wintergreen Dr./ Whitewood Ln. / Sycamore 
+16
+8:03
+17 Wintergreen Dr. 
+17
+8:05
+45 Wintergreen Dr. 
+18
+8:06
+136 Turkey Hill Rd
+19
+8:07
+146 Turkey Hill Rd
+20
+8:08
+Turkey Hill / Sunrise
+21
+8:09
+156 Turkey Hill Rd
+22
+8:09
+160 Turkey Hill Rd
+ROUTE:
+8
+1
+7:51
+Smith / Sentry Way
+2
+7:52
+DW Hwy / Residence @ DW
+3
+7:59
+Manchester St. / Bower's Landing
+4
+8:02
+Harris Pond Dr/ Bowers Landing 
+5
+8:03
+Harris Pond/ Merrimack Dr 
+6
+8:08
+125 DW Hwy
+7
+8:16
+Tinker Rd / Portside
+8
+8:19
+Tinker/Thornton's West
+9
+8:20
+82 Tinker Rd
+10
+8:20
+72 Tinker Rd
+11
+8:23
+Tinker Rd / Dunbarton 
+ROUTE:
+9
+1
+7:43
+9 Cambridge Rd 
+2
+7:44
+17 Cambridge Rd
+3
+7:44
+27 Cambridge Rd
+4
+7:45
+33 Cambridge Rd
+5
+7:46
+Cambridge Rd / Ingham Rd
+6
+7:47
+7 Ingham Rd
+7
+7:50
+201 Naticook Rd
+8
+7:51
+4 Joey 
+9
+7:51
+7 Joey 
+10
+7:52
+7 Gail Rd
+11
+7:52
+14 Gail Rd 
+12
+7:53
+Gail Rd / Curt Rd 
+13
+7:54
+41 Gail Rd
+14
+7:55
+Jay Rd / Peter Rd
+15
+7:56
+23 Peter Rd
+16
+7:58
+Lamson Rd / May
+17
+7:59
+Lamson Rd / Westborn
+18
+8:00
+Lamson Rd / Sand Terr 
+19
+8:00
+34 Lamson Dr
+20
+8:01
+40 Lamson
+21
+8:01
+Lamson Rd / Winchester Dr.
+22
+8:02
+57 Lamson
+23
+8:04
+Westborn Rd / May
+24
+8:05
+4 Winchester
+25
+8:05
+7 Winchester
+26
+8:07
+217 Naticook Rd

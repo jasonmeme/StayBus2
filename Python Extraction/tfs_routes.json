@@ -1,0 +1,1094 @@
+{
+  "tfs-routes": [
+    {
+      "stops": [
+        {
+          "stop_number": 1,
+          "time": "7:31",
+          "location": "148 Amherst Rd"
+        },
+        {
+          "stop_number": 2,
+          "time": "7:33",
+          "location": "154 Amherst Rd"
+        },
+        {
+          "stop_number": 3,
+          "time": "7:35",
+          "location": "15 Farmer Rd"
+        },
+        {
+          "stop_number": 4,
+          "time": "7:37",
+          "location": "19 Mason Rd"
+        },
+        {
+          "stop_number": 5,
+          "time": "7:39",
+          "location": "Peaslee / Fields Farm Rd"
+        },
+        {
+          "stop_number": 6,
+          "time": "7:40",
+          "location": "72 Peaslee Rd"
+        },
+        {
+          "stop_number": 7,
+          "time": "7:42",
+          "location": "46 Peaslee Rd"
+        },
+        {
+          "stop_number": 8,
+          "time": "7:43",
+          "location": "34 Peaslee Rd"
+        },
+        {
+          "stop_number": 9,
+          "time": "7:44",
+          "location": "Haines Ter / Haines Ter"
+        },
+        {
+          "stop_number": 10,
+          "time": "7:45",
+          "location": "9 Queens Way"
+        },
+        {
+          "stop_number": 11,
+          "time": "7:47",
+          "location": "22 Old Kings Rd"
+        },
+        {
+          "stop_number": 12,
+          "time": "7:48",
+          "location": "Old Kings Rd / Regal"
+        },
+        {
+          "stop_number": 13,
+          "time": "7:49",
+          "location": "Regal / Majestic"
+        },
+        {
+          "stop_number": 14,
+          "time": "7:52",
+          "location": "71 Peaslee Rd"
+        },
+        {
+          "stop_number": 15,
+          "time": "7:55",
+          "location": "4 Abbey"
+        },
+        {
+          "stop_number": 16,
+          "time": "7:56",
+          "location": "Bates / Mary Ann"
+        },
+        {
+          "stop_number": 17,
+          "time": "7:58",
+          "location": "Bates / Charles"
+        },
+        {
+          "stop_number": 18,
+          "time": "8:01",
+          "location": "46 Hansom"
+        },
+        {
+          "stop_number": 19,
+          "time": "8:02",
+          "location": "Hansom / Hansom"
+        },
+        {
+          "stop_number": 20,
+          "time": "8:03",
+          "location": "30 Hansom Rd"
+        },
+        {
+          "stop_number": 21,
+          "time": "8:04",
+          "location": "20 Hansom Rd"
+        },
+        {
+          "stop_number": 22,
+          "time": "8:07",
+          "location": "46 Bates Rd"
+        },
+        {
+          "stop_number": 23,
+          "time": "8:08",
+          "location": "14 Four Winds"
+        },
+        {
+          "stop_number": 24,
+          "time": "8:09",
+          "location": "10 Everest Dr."
+        }
+      ],
+      "name": "1"
+    },
+    {
+      "stops": [
+        {
+          "stop_number": 1,
+          "time": "7:40",
+          "location": "Amherst / Los Primos (dirt area on Amherst)"
+        },
+        {
+          "stop_number": 2,
+          "time": "7:42",
+          "location": "174 Turkey Hill"
+        },
+        {
+          "stop_number": 3,
+          "time": "7:43",
+          "location": "12 Bigwood Dr"
+        },
+        {
+          "stop_number": 4,
+          "time": "7:44",
+          "location": "5 Den Ave."
+        },
+        {
+          "stop_number": 5,
+          "time": "7:46",
+          "location": "Wallace Rd / JoEllen"
+        },
+        {
+          "stop_number": 6,
+          "time": "7:47",
+          "location": "Jo Ellen/Forsythia"
+        },
+        {
+          "stop_number": 7,
+          "time": "7:49",
+          "location": "4 Stevens"
+        },
+        {
+          "stop_number": 8,
+          "time": "7:49",
+          "location": "18 Stevens"
+        },
+        {
+          "stop_number": 9,
+          "time": "7:50",
+          "location": "10 Berry"
+        },
+        {
+          "stop_number": 10,
+          "time": "7:51",
+          "location": "30 Amherst"
+        },
+        {
+          "stop_number": 11,
+          "time": "7:53",
+          "location": "26 Scott Dr"
+        },
+        {
+          "stop_number": 12,
+          "time": "7:54",
+          "location": "14 Scott Dr."
+        },
+        {
+          "stop_number": 13,
+          "time": "7:55",
+          "location": "Scott / Bryce"
+        },
+        {
+          "stop_number": 14,
+          "time": "7:56",
+          "location": "Amherst Rd / Watkins Rd"
+        },
+        {
+          "stop_number": 15,
+          "time": "7:58",
+          "location": "15 Merrill"
+        },
+        {
+          "stop_number": 16,
+          "time": "8:00",
+          "location": "51 Amherst Rd."
+        },
+        {
+          "stop_number": 17,
+          "time": "8:01",
+          "location": "66 Amherst Rd"
+        },
+        {
+          "stop_number": 18,
+          "time": "8:02",
+          "location": "83 Amherst Rd"
+        },
+        {
+          "stop_number": 19,
+          "time": "8:02",
+          "location": "91 Amherst Rd"
+        },
+        {
+          "stop_number": 20,
+          "time": "8:05",
+          "location": "Naticook Rd / Danforth Rd"
+        },
+        {
+          "stop_number": 21,
+          "time": "8:06",
+          "location": "Naticook Rd / Hassell Rd"
+        },
+        {
+          "stop_number": 22,
+          "time": "8:07",
+          "location": "Naticook Rd / Hutchinson Rd"
+        },
+        {
+          "stop_number": 23,
+          "time": "8:08",
+          "location": "Naticook Rd / Palmeri Dr./ Cummings"
+        },
+        {
+          "stop_number": 24,
+          "time": "8:09",
+          "location": "53 Naticook Rd"
+        },
+        {
+          "stop_number": 25,
+          "time": "8:10",
+          "location": "88 Naticook Rd"
+        },
+        {
+          "stop_number": 26,
+          "time": "8:12",
+          "location": "129 Naticook Rd"
+        }
+      ],
+      "name": "2"
+    },
+    {
+      "stops": [
+        {
+          "stop_number": 1,
+          "time": "7:53",
+          "location": "Dena Ave. / Hawthorne Rd"
+        },
+        {
+          "stop_number": 2,
+          "time": "7:54",
+          "location": "5 Erik St"
+        },
+        {
+          "stop_number": 3,
+          "time": "7:55",
+          "location": "26 Erik St"
+        },
+        {
+          "stop_number": 4,
+          "time": "7:56",
+          "location": "30 Erik St"
+        },
+        {
+          "stop_number": 5,
+          "time": "7:56",
+          "location": "32 Erik St"
+        },
+        {
+          "stop_number": 6,
+          "time": "7:57",
+          "location": "45 Erik St."
+        },
+        {
+          "stop_number": 7,
+          "time": "7:57",
+          "location": "55 Erik St"
+        },
+        {
+          "stop_number": 8,
+          "time": "7:58",
+          "location": "50 Erik"
+        },
+        {
+          "stop_number": 9,
+          "time": "8:00",
+          "location": "54 Dahl Rd"
+        },
+        {
+          "stop_number": 10,
+          "time": "8:01",
+          "location": "48 Dahl Rd"
+        },
+        {
+          "stop_number": 11,
+          "time": "8:02",
+          "location": "29 Dahl Rd"
+        },
+        {
+          "stop_number": 12,
+          "time": "8:03",
+          "location": "14 Kyle"
+        },
+        {
+          "stop_number": 13,
+          "time": "8:05",
+          "location": "39 Brek Dr."
+        },
+        {
+          "stop_number": 14,
+          "time": "8:05",
+          "location": "32 Brek Dr."
+        },
+        {
+          "stop_number": 15,
+          "time": "8:06",
+          "location": "24 Brek Dr."
+        },
+        {
+          "stop_number": 16,
+          "time": "8:07",
+          "location": "16 Brek Dr."
+        },
+        {
+          "stop_number": 17,
+          "time": "8:08",
+          "location": "7 Brek Dr."
+        },
+        {
+          "stop_number": 18,
+          "time": "8:10",
+          "location": "16 Dahl Rd"
+        }
+      ],
+      "name": "3"
+    },
+    {
+      "stops": [
+        {
+          "stop_number": 1,
+          "time": "7:40",
+          "location": "1 Riverside Dr"
+        },
+        {
+          "stop_number": 2,
+          "time": "7:40",
+          "location": "6 Riverside Dr"
+        },
+        {
+          "stop_number": 3,
+          "time": "7:41",
+          "location": "Davidson Rd / Piedmont"
+        },
+        {
+          "stop_number": 4,
+          "time": "7:43",
+          "location": "4 Piedmont Ave"
+        },
+        {
+          "stop_number": 5,
+          "time": "7:45",
+          "location": "167 Amherst Rd"
+        },
+        {
+          "stop_number": 6,
+          "time": "7:46",
+          "location": "Amherst Rd / Tomasian / Fuller Mill Rd"
+        },
+        {
+          "stop_number": 7,
+          "time": "7:47",
+          "location": "4 County Rd"
+        },
+        {
+          "stop_number": 8,
+          "time": "7:48",
+          "location": "5 Savannah Way"
+        },
+        {
+          "stop_number": 9,
+          "time": "7:48",
+          "location": "9 Savannah Way"
+        },
+        {
+          "stop_number": 10,
+          "time": "7:49",
+          "location": "12 Springfield Cir."
+        },
+        {
+          "stop_number": 11,
+          "time": "7:50",
+          "location": "23 Springfield Cir"
+        },
+        {
+          "stop_number": 12,
+          "time": "7:51",
+          "location": "28 Springfield Cir"
+        },
+        {
+          "stop_number": 13,
+          "time": "7:52",
+          "location": "Springfield Cir / Rimmon Ct"
+        },
+        {
+          "stop_number": 14,
+          "time": "7:53",
+          "location": "45 Springfield Cir"
+        },
+        {
+          "stop_number": 15,
+          "time": "7:53",
+          "location": "51 Springfield Cir"
+        },
+        {
+          "stop_number": 16,
+          "time": "7:54",
+          "location": "22 Savannah Way"
+        },
+        {
+          "stop_number": 17,
+          "time": "7:56",
+          "location": "102 Seavern's Bridge Rd"
+        },
+        {
+          "stop_number": 18,
+          "time": "7:58",
+          "location": "49 Seaverns Bridge Rd"
+        },
+        {
+          "stop_number": 19,
+          "time": "7:59",
+          "location": "22 Seaverns Bridge Rd"
+        },
+        {
+          "stop_number": 20,
+          "time": "8:04",
+          "location": "12 Cramer Hill Rd"
+        },
+        {
+          "stop_number": 21,
+          "time": "8:05",
+          "location": "Cramer Hill / Coles Rock Rd"
+        },
+        {
+          "stop_number": 22,
+          "time": "8:06",
+          "location": "16 Seaverns Bridge Rd."
+        },
+        {
+          "stop_number": 23,
+          "time": "8:06",
+          "location": "14 Seaverns Bridge Rd"
+        },
+        {
+          "stop_number": 24,
+          "time": "8:07",
+          "location": "17A Seaverns Bridge Rd"
+        },
+        {
+          "stop_number": 25,
+          "time": "8:08",
+          "location": "9 Seaverns Bridge Rd"
+        },
+        {
+          "stop_number": 26,
+          "time": "8:09",
+          "location": "P/U @ Merrimack Valley Baptist Church"
+        },
+        {
+          "stop_number": 27,
+          "time": "8:14",
+          "location": "Continental Blvd / Bailey Ct"
+        }
+      ],
+      "name": "4"
+    },
+    {
+      "stops": [
+        {
+          "stop_number": 1,
+          "time": "7:44",
+          "location": "DW Hwy / Monument"
+        },
+        {
+          "stop_number": 2,
+          "time": "7:45",
+          "location": "DW Hwy / Angelo Dr"
+        },
+        {
+          "stop_number": 3,
+          "time": "7:46",
+          "location": "329  DW Dr."
+        },
+        {
+          "stop_number": 4,
+          "time": "7:47",
+          "location": "76 Island Dr"
+        },
+        {
+          "stop_number": 5,
+          "time": "7:47",
+          "location": "41 Island Dr"
+        },
+        {
+          "stop_number": 6,
+          "time": "7:51",
+          "location": "404 DW Hwy"
+        },
+        {
+          "stop_number": 7,
+          "time": "7:52",
+          "location": "1 Bretton"
+        },
+        {
+          "stop_number": 8,
+          "time": "7:53",
+          "location": "Hillcrest / E. Chamberlain"
+        },
+        {
+          "stop_number": 9,
+          "time": "7:54",
+          "location": "2 Oak St"
+        },
+        {
+          "stop_number": 10,
+          "time": "7:56",
+          "location": "366 DW - Trampoline Ent."
+        },
+        {
+          "stop_number": 11,
+          "time": "7:57",
+          "location": "DW Highway/East Ridge Condos"
+        },
+        {
+          "stop_number": 12,
+          "time": "7:59",
+          "location": "DW Hwy / Hoyt St."
+        },
+        {
+          "stop_number": 13,
+          "time": "8:03",
+          "location": "Camp Sargent / Nottingwood Lane"
+        },
+        {
+          "stop_number": 14,
+          "time": "8:03",
+          "location": "19 Camp Sargent Rd"
+        },
+        {
+          "stop_number": 15,
+          "time": "8:04",
+          "location": "5 Whittier"
+        },
+        {
+          "stop_number": 16,
+          "time": "8:05",
+          "location": "Whittier Rd / Cranston Cir"
+        },
+        {
+          "stop_number": 17,
+          "time": "8:05",
+          "location": "Whittier Rd / Danville Cir"
+        },
+        {
+          "stop_number": 18,
+          "time": "8:06",
+          "location": "Whittier Rd / Englewood"
+        },
+        {
+          "stop_number": 19,
+          "time": "8:07",
+          "location": "11 Arbor Rd"
+        },
+        {
+          "stop_number": 20,
+          "time": "8:08",
+          "location": "11 Beech St"
+        },
+        {
+          "stop_number": 21,
+          "time": "8:08",
+          "location": "20 Beech St."
+        },
+        {
+          "stop_number": 22,
+          "time": "8:09",
+          "location": "12 Douglas St."
+        },
+        {
+          "stop_number": 23,
+          "time": "8:09",
+          "location": "7 Douglas St"
+        },
+        {
+          "stop_number": 24,
+          "time": "8:10",
+          "location": "Douglas St / Cedar Rd"
+        },
+        {
+          "stop_number": 25,
+          "time": "8:11",
+          "location": "4 Cedar Rd"
+        },
+        {
+          "stop_number": 26,
+          "time": "8:11",
+          "location": "Camp Sargent Rd / Mall Apt Pth"
+        }
+      ],
+      "name": "5"
+    },
+    {
+      "stops": [
+        {
+          "stop_number": 1,
+          "time": "7:39",
+          "location": "Cota Rd / Erla"
+        },
+        {
+          "stop_number": 2,
+          "time": "7:40",
+          "location": "Cota / 2nd Sharon"
+        },
+        {
+          "stop_number": 3,
+          "time": "7:40",
+          "location": "25 Cota Rd"
+        },
+        {
+          "stop_number": 4,
+          "time": "7:41",
+          "location": "39 Cota Rd."
+        },
+        {
+          "stop_number": 5,
+          "time": "7:41",
+          "location": "66 Cota Rd."
+        },
+        {
+          "stop_number": 6,
+          "time": "7:42",
+          "location": "77 Cota Rd"
+        },
+        {
+          "stop_number": 7,
+          "time": "7:47",
+          "location": "15 Iris"
+        },
+        {
+          "stop_number": 8,
+          "time": "7:48",
+          "location": "5 Iris Dr"
+        },
+        {
+          "stop_number": 9,
+          "time": "7:49",
+          "location": "2 Penrose"
+        },
+        {
+          "stop_number": 10,
+          "time": "7:50",
+          "location": "5 Penrose Ln"
+        },
+        {
+          "stop_number": 11,
+          "time": "7:51",
+          "location": "5 Jade Rd"
+        },
+        {
+          "stop_number": 12,
+          "time": "7:52",
+          "location": "89 Turkey Hill Rd"
+        },
+        {
+          "stop_number": 13,
+          "time": "7:52",
+          "location": "92 Turkey Hill Rd"
+        },
+        {
+          "stop_number": 14,
+          "time": "7:53",
+          "location": "5 Eden St."
+        },
+        {
+          "stop_number": 15,
+          "time": "7:54",
+          "location": "Newton Rd / Bancroft"
+        },
+        {
+          "stop_number": 16,
+          "time": "7:54",
+          "location": "Bancroft / Rutherford"
+        },
+        {
+          "stop_number": 17,
+          "time": "7:56",
+          "location": "3 Wildcat Falls"
+        },
+        {
+          "stop_number": 18,
+          "time": "7:56",
+          "location": "7 Wildcat Falls"
+        },
+        {
+          "stop_number": 19,
+          "time": "7:57",
+          "location": "John / Edward / Wildcat Falls"
+        },
+        {
+          "stop_number": 20,
+          "time": "7:57",
+          "location": "8 John"
+        },
+        {
+          "stop_number": 21,
+          "time": "7:58",
+          "location": "6 W. Chamberlain"
+        },
+        {
+          "stop_number": 22,
+          "time": "7:59",
+          "location": "25 W. Chamberlain"
+        },
+        {
+          "stop_number": 23,
+          "time": "7:59",
+          "location": "W Chamberlain/ Summit"
+        },
+        {
+          "stop_number": 24,
+          "time": "8:00",
+          "location": "30 W. Chamberlain Rd"
+        },
+        {
+          "stop_number": 25,
+          "time": "8:00",
+          "location": "22 W. Chamberlain Rd"
+        },
+        {
+          "stop_number": 26,
+          "time": "8:02",
+          "location": "45 Meetinghouse Rd"
+        },
+        {
+          "stop_number": 27,
+          "time": "8:03",
+          "location": "Meetinghouse/ Nathan Hale"
+        },
+        {
+          "stop_number": 28,
+          "time": "8:03",
+          "location": "29 Meetinghouse Rd"
+        },
+        {
+          "stop_number": 29,
+          "time": "8:04",
+          "location": "Fox Meadow / Riley"
+        },
+        {
+          "stop_number": 30,
+          "time": "8:05",
+          "location": "3 Fox Meadow"
+        }
+      ],
+      "name": "6"
+    },
+    {
+      "stops": [
+        {
+          "stop_number": 1,
+          "time": "7:47",
+          "location": "83 / 86 Turkey Hill Rd"
+        },
+        {
+          "stop_number": 2,
+          "time": "7:50",
+          "location": "6 Sarah Dr"
+        },
+        {
+          "stop_number": 4,
+          "time": "7:51",
+          "location": "22 Sarah Dr."
+        },
+        {
+          "stop_number": 5,
+          "time": "7:52",
+          "location": "Sarah Dr. / Craig Dr."
+        },
+        {
+          "stop_number": 6,
+          "time": "7:53",
+          "location": "33 Craig Dr."
+        },
+        {
+          "stop_number": 7,
+          "time": "7:54",
+          "location": "Craig Dr. / Kelly Wy"
+        },
+        {
+          "stop_number": 8,
+          "time": "7:56",
+          "location": "1 Acacia"
+        },
+        {
+          "stop_number": 9,
+          "time": "7:57",
+          "location": "8 Northwood Dr."
+        },
+        {
+          "stop_number": 10,
+          "time": "7:57",
+          "location": "14 Northwood"
+        },
+        {
+          "stop_number": 11,
+          "time": "7:58",
+          "location": "18 Northwood"
+        },
+        {
+          "stop_number": 12,
+          "time": "8:00",
+          "location": "14 Laurel St"
+        },
+        {
+          "stop_number": 13,
+          "time": "8:00",
+          "location": "7 Laurel St"
+        },
+        {
+          "stop_number": 14,
+          "time": "8:01",
+          "location": "10 Candy Ln"
+        },
+        {
+          "stop_number": 15,
+          "time": "8:03",
+          "location": "Wintergreen Dr./ Whitewood Ln. / Sycamore"
+        },
+        {
+          "stop_number": 16,
+          "time": "8:03",
+          "location": "17 Wintergreen Dr."
+        },
+        {
+          "stop_number": 17,
+          "time": "8:05",
+          "location": "45 Wintergreen Dr."
+        },
+        {
+          "stop_number": 18,
+          "time": "8:06",
+          "location": "136 Turkey Hill Rd"
+        },
+        {
+          "stop_number": 19,
+          "time": "8:07",
+          "location": "146 Turkey Hill Rd"
+        },
+        {
+          "stop_number": 20,
+          "time": "8:08",
+          "location": "Turkey Hill / Sunrise"
+        },
+        {
+          "stop_number": 21,
+          "time": "8:09",
+          "location": "156 Turkey Hill Rd"
+        },
+        {
+          "stop_number": 22,
+          "time": "8:09",
+          "location": "160 Turkey Hill Rd"
+        }
+      ],
+      "name": "7"
+    },
+    {
+      "stops": [
+        {
+          "stop_number": 1,
+          "time": "7:51",
+          "location": "Smith / Sentry Way"
+        },
+        {
+          "stop_number": 2,
+          "time": "7:52",
+          "location": "DW Hwy / Residence @ DW"
+        },
+        {
+          "stop_number": 3,
+          "time": "7:59",
+          "location": "Manchester St. / Bower's Landing"
+        },
+        {
+          "stop_number": 4,
+          "time": "8:02",
+          "location": "Harris Pond Dr/ Bowers Landing"
+        },
+        {
+          "stop_number": 5,
+          "time": "8:03",
+          "location": "Harris Pond/ Merrimack Dr"
+        },
+        {
+          "stop_number": 6,
+          "time": "8:08",
+          "location": "125 DW Hwy"
+        },
+        {
+          "stop_number": 7,
+          "time": "8:16",
+          "location": "Tinker Rd / Portside"
+        },
+        {
+          "stop_number": 8,
+          "time": "8:19",
+          "location": "Tinker/Thornton's West"
+        },
+        {
+          "stop_number": 9,
+          "time": "8:20",
+          "location": "82 Tinker Rd"
+        },
+        {
+          "stop_number": 10,
+          "time": "8:20",
+          "location": "72 Tinker Rd"
+        },
+        {
+          "stop_number": 11,
+          "time": "8:23",
+          "location": "Tinker Rd / Dunbarton"
+        }
+      ],
+      "name": "8"
+    },
+    {
+      "stops": [
+        {
+          "stop_number": 1,
+          "time": "7:43",
+          "location": "9 Cambridge Rd"
+        },
+        {
+          "stop_number": 2,
+          "time": "7:44",
+          "location": "17 Cambridge Rd"
+        },
+        {
+          "stop_number": 3,
+          "time": "7:44",
+          "location": "27 Cambridge Rd"
+        },
+        {
+          "stop_number": 4,
+          "time": "7:45",
+          "location": "33 Cambridge Rd"
+        },
+        {
+          "stop_number": 5,
+          "time": "7:46",
+          "location": "Cambridge Rd / Ingham Rd"
+        },
+        {
+          "stop_number": 6,
+          "time": "7:47",
+          "location": "7 Ingham Rd"
+        },
+        {
+          "stop_number": 7,
+          "time": "7:50",
+          "location": "201 Naticook Rd"
+        },
+        {
+          "stop_number": 8,
+          "time": "7:51",
+          "location": "4 Joey"
+        },
+        {
+          "stop_number": 9,
+          "time": "7:51",
+          "location": "7 Joey"
+        },
+        {
+          "stop_number": 10,
+          "time": "7:52",
+          "location": "7 Gail Rd"
+        },
+        {
+          "stop_number": 11,
+          "time": "7:52",
+          "location": "14 Gail Rd"
+        },
+        {
+          "stop_number": 12,
+          "time": "7:53",
+          "location": "Gail Rd / Curt Rd"
+        },
+        {
+          "stop_number": 13,
+          "time": "7:54",
+          "location": "41 Gail Rd"
+        },
+        {
+          "stop_number": 14,
+          "time": "7:55",
+          "location": "Jay Rd / Peter Rd"
+        },
+        {
+          "stop_number": 15,
+          "time": "7:56",
+          "location": "23 Peter Rd"
+        },
+        {
+          "stop_number": 16,
+          "time": "7:58",
+          "location": "Lamson Rd / May"
+        },
+        {
+          "stop_number": 17,
+          "time": "7:59",
+          "location": "Lamson Rd / Westborn"
+        },
+        {
+          "stop_number": 18,
+          "time": "8:00",
+          "location": "Lamson Rd / Sand Terr"
+        },
+        {
+          "stop_number": 19,
+          "time": "8:00",
+          "location": "34 Lamson Dr"
+        },
+        {
+          "stop_number": 20,
+          "time": "8:01",
+          "location": "40 Lamson"
+        },
+        {
+          "stop_number": 21,
+          "time": "8:01",
+          "location": "Lamson Rd / Winchester Dr."
+        },
+        {
+          "stop_number": 22,
+          "time": "8:02",
+          "location": "57 Lamson"
+        },
+        {
+          "stop_number": 23,
+          "time": "8:04",
+          "location": "Westborn Rd / May"
+        },
+        {
+          "stop_number": 24,
+          "time": "8:05",
+          "location": "4 Winchester"
+        },
+        {
+          "stop_number": 25,
+          "time": "8:05",
+          "location": "7 Winchester"
+        },
+        {
+          "stop_number": 26,
+          "time": "8:07",
+          "location": "217 Naticook Rd"
+        }
+      ],
+      "name": "9"
+    }
+  ]
+}

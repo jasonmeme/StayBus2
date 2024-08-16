@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct FavoriteRoutesView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    @Binding var routes: [Route]
+    
+    var favoriteRoutes: [Route] {
+        routes.filter { $0.isFavorite }
     }
-}
-
-#Preview {
-    FavoriteRoutesView()
+    
+    var body: some View {
+        List {
+            ForEach(favoriteRoutes.indices, id: \.self) { index in
+                NavigationLink(destination: RouteDetailView(route: binding(for: favoriteRoutes[index]))) {
+                    Text(favoriteRoutes[index].name)
+                }
+            }
+        }
+        .navigationTitle("Favorite Routes")
+    }
+    
+    private func binding(for route: Route) -> Binding<Route> {
+        guard let index = routes.firstIndex(where: { $0.id == route.id }) else {
+            fatalError("Can't find route in array")
+        }
+        return $routes[index]
+    }
 }

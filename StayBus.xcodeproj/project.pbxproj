@@ -44,6 +44,11 @@
 		C58EC22C2BE90755005E88E4 /* StayBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58EC22B2BE90755005E88E4 /* StayBusUITests.swift */; };
 		C58EC22E2BE90755005E88E4 /* StayBusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58EC22D2BE90755005E88E4 /* StayBusUITestsLaunchTests.swift */; };
 		C5A9D45C2C6E59CE00DDC34A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A9D45B2C6E59CE00DDC34A /* CustomButton.swift */; };
+		C5A9D45E2C6F155E00DDC34A /* RouteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A9D45D2C6F155E00DDC34A /* RouteListView.swift */; };
+		C5A9D4602C6F15CD00DDC34A /* RouteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A9D45F2C6F15CD00DDC34A /* RouteDetailView.swift */; };
+		C5A9D4622C6F167700DDC34A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A9D4612C6F167700DDC34A /* DashboardView.swift */; };
+		C5A9D4642C6F177D00DDC34A /* FavoriteRoutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A9D4632C6F177D00DDC34A /* FavoriteRoutesView.swift */; };
+		C5A9D4662C6F185400DDC34A /* NotificationSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A9D4652C6F185400DDC34A /* NotificationSetupView.swift */; };
 		C5C409372BFC204C004329A5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C409362BFC204C004329A5 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +104,11 @@
 		C58EC22B2BE90755005E88E4 /* StayBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayBusUITests.swift; sourceTree = "<group>"; };
 		C58EC22D2BE90755005E88E4 /* StayBusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayBusUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C5A9D45B2C6E59CE00DDC34A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		C5A9D45D2C6F155E00DDC34A /* RouteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteListView.swift; sourceTree = "<group>"; };
+		C5A9D45F2C6F15CD00DDC34A /* RouteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailView.swift; sourceTree = "<group>"; };
+		C5A9D4612C6F167700DDC34A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		C5A9D4632C6F177D00DDC34A /* FavoriteRoutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRoutesView.swift; sourceTree = "<group>"; };
+		C5A9D4652C6F185400DDC34A /* NotificationSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSetupView.swift; sourceTree = "<group>"; };
 		C5C409362BFC204C004329A5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = Login/HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,7 +231,11 @@
 				C57037E22BFB018600321B6B /* StayBusDebug.entitlements */,
 				C5594F2E2BF911AF00342E2D /* Registration */,
 				C5594F2D2BF9119F00342E2D /* Login */,
+				C5A9D4612C6F167700DDC34A /* DashboardView.swift */,
 				C550EBD42BF416EA00936274 /* ProfileView.swift */,
+				C5A9D45D2C6F155E00DDC34A /* RouteListView.swift */,
+				C5A9D4632C6F177D00DDC34A /* FavoriteRoutesView.swift */,
+				C5A9D45F2C6F15CD00DDC34A /* RouteDetailView.swift */,
 				C52244B92BF301DF00541F41 /* BeginView.swift */,
 				C5C409362BFC204C004329A5 /* HomeView.swift */,
 				C52244BB2BF301FD00541F41 /* MapView.swift */,
@@ -235,6 +249,7 @@
 				C573585C2BEF862E00C4AE4F /* Lottie Files */,
 				C57358652BF0288300C4AE4F /* fonts */,
 				C58EC2162BE90754005E88E4 /* Preview Content */,
+				C5A9D4652C6F185400DDC34A /* NotificationSetupView.swift */,
 			);
 			path = StayBus;
 			sourceTree = "<group>";
@@ -421,15 +436,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5A9D4642C6F177D00DDC34A /* FavoriteRoutesView.swift in Sources */,
 				C52244B82BF301CA00541F41 /* ForgotPassView.swift in Sources */,
+				C5A9D4602C6F15CD00DDC34A /* RouteDetailView.swift in Sources */,
 				C50021542BFFE408003773D6 /* AuthenticationManager.swift in Sources */,
 				C5A9D45C2C6E59CE00DDC34A /* CustomButton.swift in Sources */,
 				C5C409372BFC204C004329A5 /* HomeView.swift in Sources */,
 				C52244BC2BF301FD00541F41 /* MapView.swift in Sources */,
 				C57358452BEE98DB00C4AE4F /* LoginView.swift in Sources */,
+				C5A9D4622C6F167700DDC34A /* DashboardView.swift in Sources */,
 				C57358622BEF9F9A00C4AE4F /* ColorExtensions.swift in Sources */,
+				C5A9D4662C6F185400DDC34A /* NotificationSetupView.swift in Sources */,
 				C58EC2132BE90753005E88E4 /* ContentView.swift in Sources */,
 				C52244B62BF2FE1200541F41 /* RegistrationView.swift in Sources */,
+				C5A9D45E2C6F155E00DDC34A /* RouteListView.swift in Sources */,
 				C58EC2112BE90753005E88E4 /* StayBusApp.swift in Sources */,
 				C550EBD52BF416EA00936274 /* ProfileView.swift in Sources */,
 				C52244BA2BF301DF00541F41 /* BeginView.swift in Sources */,

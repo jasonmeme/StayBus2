@@ -1,0 +1,2149 @@
+{
+  "school": "Thorntons Ferry Elementary School",
+  "routes": [
+    {
+      "id": "1",
+      "name": "Route 1",
+      "stops": [
+        {
+          "id": "1-1",
+          "stopNumber": 1,
+          "time": "07:31",
+          "location": "148 Amherst Rd",
+          "coordinates": {
+            "latitude": 42.8468299,
+            "longitude": -71.53800439999999
+          }
+        },
+        {
+          "id": "1-2",
+          "stopNumber": 2,
+          "time": "07:33",
+          "location": "154 Amherst Rd",
+          "coordinates": {
+            "latitude": 42.8469669,
+            "longitude": -71.53971700000001
+          }
+        },
+        {
+          "id": "1-3",
+          "stopNumber": 3,
+          "time": "07:35",
+          "location": "15 Farmer Rd",
+          "coordinates": {
+            "latitude": 42.8404173,
+            "longitude": -71.5501167
+          }
+        },
+        {
+          "id": "1-4",
+          "stopNumber": 4,
+          "time": "07:37",
+          "location": "19 Mason Rd",
+          "coordinates": {
+            "latitude": 42.8385048,
+            "longitude": -71.55157729999999
+          }
+        },
+        {
+          "id": "1-5",
+          "stopNumber": 5,
+          "time": "07:39",
+          "location": "Peaslee / Fields Farm Rd",
+          "coordinates": {
+            "latitude": 42.8327894,
+            "longitude": -71.5572768
+          }
+        },
+        {
+          "id": "1-6",
+          "stopNumber": 6,
+          "time": "07:40",
+          "location": "72 Peaslee Rd",
+          "coordinates": {
+            "latitude": 42.8305512,
+            "longitude": -71.5520467
+          }
+        },
+        {
+          "id": "1-7",
+          "stopNumber": 7,
+          "time": "07:42",
+          "location": "46 Peaslee Rd",
+          "coordinates": {
+            "latitude": 42.8273162,
+            "longitude": -71.5454717
+          }
+        },
+        {
+          "id": "1-8",
+          "stopNumber": 8,
+          "time": "07:43",
+          "location": "34 Peaslee Rd",
+          "coordinates": {
+            "latitude": 42.8257667,
+            "longitude": -71.54223429999999
+          }
+        },
+        {
+          "id": "1-9",
+          "stopNumber": 9,
+          "time": "07:44",
+          "location": "Haines Ter / Haines Ter",
+          "coordinates": {
+            "latitude": 42.8261908,
+            "longitude": -71.539432
+          }
+        },
+        {
+          "id": "1-10",
+          "stopNumber": 10,
+          "time": "07:45",
+          "location": "9 Queens Way",
+          "coordinates": {
+            "latitude": 42.8296015,
+            "longitude": -71.5369978
+          }
+        },
+        {
+          "id": "1-11",
+          "stopNumber": 11,
+          "time": "07:47",
+          "location": "22 Old Kings Rd",
+          "coordinates": {
+            "latitude": 42.8290752,
+            "longitude": -71.5345966
+          }
+        },
+        {
+          "id": "1-12",
+          "stopNumber": 12,
+          "time": "07:48",
+          "location": "Old Kings Rd / Regal",
+          "coordinates": {
+            "latitude": 42.8269637,
+            "longitude": -71.53580939999999
+          }
+        },
+        {
+          "id": "1-13",
+          "stopNumber": 13,
+          "time": "07:49",
+          "location": "Regal / Majestic",
+          "coordinates": {
+            "latitude": 42.827314,
+            "longitude": -71.536845
+          }
+        },
+        {
+          "id": "1-14",
+          "stopNumber": 14,
+          "time": "07:52",
+          "location": "71 Peaslee Rd",
+          "coordinates": {
+            "latitude": 42.8304566,
+            "longitude": -71.5512469
+          }
+        },
+        {
+          "id": "1-15",
+          "stopNumber": 15,
+          "time": "07:55",
+          "location": "4 Abbey",
+          "coordinates": {
+            "latitude": 42.8331761,
+            "longitude": -71.54983709999999
+          }
+        },
+        {
+          "id": "1-16",
+          "stopNumber": 16,
+          "time": "07:56",
+          "location": "Bates / Mary Ann",
+          "coordinates": {
+            "latitude": 42.830086,
+            "longitude": -71.55588
+          }
+        },
+        {
+          "id": "1-17",
+          "stopNumber": 17,
+          "time": "07:58",
+          "location": "Bates / Charles",
+          "coordinates": {
+            "latitude": 42.8259531,
+            "longitude": -71.557417
+          }
+        },
+        {
+          "id": "1-18",
+          "stopNumber": 18,
+          "time": "08:01",
+          "location": "46 Hansom",
+          "coordinates": {
+            "latitude": 42.8173651,
+            "longitude": -71.55753539999999
+          }
+        },
+        {
+          "id": "1-19",
+          "stopNumber": 19,
+          "time": "08:02",
+          "location": "Hansom / Hansom",
+          "coordinates": {
+            "latitude": 42.8187852,
+            "longitude": -71.5551017
+          }
+        },
+        {
+          "id": "1-20",
+          "stopNumber": 20,
+          "time": "08:03",
+          "location": "30 Hansom Rd",
+          "coordinates": {
+            "latitude": 42.8172887,
+            "longitude": -71.5510905
+          }
+        },
+        {
+          "id": "1-21",
+          "stopNumber": 21,
+          "time": "08:04",
+          "location": "20 Hansom Rd",
+          "coordinates": {
+            "latitude": 42.8211461,
+            "longitude": -71.552416
+          }
+        },
+        {
+          "id": "1-22",
+          "stopNumber": 22,
+          "time": "08:07",
+          "location": "46 Bates Rd",
+          "coordinates": {
+            "latitude": 42.82299,
+            "longitude": -71.556714
+          }
+        },
+        {
+          "id": "1-23",
+          "stopNumber": 23,
+          "time": "08:08",
+          "location": "14 Four Winds",
+          "coordinates": {
+            "latitude": 42.82433959999999,
+            "longitude": -71.5523217
+          }
+        },
+        {
+          "id": "1-24",
+          "stopNumber": 24,
+          "time": "08:09",
+          "location": "10 Everest Dr.",
+          "coordinates": {
+            "latitude": 42.825593,
+            "longitude": -71.55037399999999
+          }
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Route 2",
+      "stops": [
+        {
+          "id": "2-1",
+          "stopNumber": 1,
+          "time": "07:40",
+          "location": "Amherst / Los Primos (dirt area on Amherst)",
+          "coordinates": {
+            "latitude": 42.8400151,
+            "longitude": -71.496326
+          }
+        },
+        {
+          "id": "2-2",
+          "stopNumber": 2,
+          "time": "07:42",
+          "location": "174 Turkey Hill",
+          "coordinates": {
+            "latitude": 42.8405963,
+            "longitude": -71.5000201
+          }
+        },
+        {
+          "id": "2-3",
+          "stopNumber": 3,
+          "time": "07:43",
+          "location": "12 Bigwood Dr",
+          "coordinates": {
+            "latitude": 42.84232979999999,
+            "longitude": -71.49982279999999
+          }
+        },
+        {
+          "id": "2-4",
+          "stopNumber": 4,
+          "time": "07:44",
+          "location": "5 Den Ave.",
+          "coordinates": {
+            "latitude": 42.8446886,
+            "longitude": -71.50189189999999
+          }
+        },
+        {
+          "id": "2-5",
+          "stopNumber": 5,
+          "time": "07:46",
+          "location": "Wallace Rd / JoEllen",
+          "coordinates": {
+            "latitude": 42.842562,
+            "longitude": -71.5036109
+          }
+        },
+        {
+          "id": "2-6",
+          "stopNumber": 6,
+          "time": "07:47",
+          "location": "Jo Ellen/Forsythia",
+          "coordinates": {
+            "latitude": 42.8413957,
+            "longitude": -71.5029696
+          }
+        },
+        {
+          "id": "2-7",
+          "stopNumber": 7,
+          "time": "07:49",
+          "location": "4 Stevens",
+          "coordinates": {
+            "latitude": 42.8392353,
+            "longitude": -71.5018244
+          }
+        },
+        {
+          "id": "2-8",
+          "stopNumber": 8,
+          "time": "07:49",
+          "location": "18 Stevens",
+          "coordinates": {
+            "latitude": 42.8379021,
+            "longitude": -71.5033772
+          }
+        },
+        {
+          "id": "2-9",
+          "stopNumber": 9,
+          "time": "07:50",
+          "location": "10 Berry",
+          "coordinates": {
+            "latitude": 42.8380346,
+            "longitude": -71.5051569
+          }
+        },
+        {
+          "id": "2-10",
+          "stopNumber": 10,
+          "time": "07:51",
+          "location": "30 Amherst",
+          "coordinates": {
+            "latitude": 42.8393875,
+            "longitude": -71.5055081
+          }
+        },
+        {
+          "id": "2-11",
+          "stopNumber": 11,
+          "time": "07:53",
+          "location": "26 Scott Dr",
+          "coordinates": {
+            "latitude": 42.8364309,
+            "longitude": -71.5165361
+          }
+        },
+        {
+          "id": "2-12",
+          "stopNumber": 12,
+          "time": "07:54",
+          "location": "14 Scott Dr.",
+          "coordinates": {
+            "latitude": 42.83455499999999,
+            "longitude": -71.5116736
+          }
+        },
+        {
+          "id": "2-13",
+          "stopNumber": 13,
+          "time": "07:55",
+          "location": "Scott / Bryce",
+          "coordinates": {
+            "latitude": 42.8389966,
+            "longitude": -71.5084938
+          }
+        },
+        {
+          "id": "2-14",
+          "stopNumber": 14,
+          "time": "07:56",
+          "location": "Amherst Rd / Watkins Rd",
+          "coordinates": {
+            "latitude": 42.8405546,
+            "longitude": -71.509125
+          }
+        },
+        {
+          "id": "2-15",
+          "stopNumber": 15,
+          "time": "07:58",
+          "location": "15 Merrill",
+          "coordinates": {
+            "latitude": 42.8417802,
+            "longitude": -71.5166244
+          }
+        },
+        {
+          "id": "2-16",
+          "stopNumber": 16,
+          "time": "08:00",
+          "location": "51 Amherst Rd",
+          "coordinates": {
+            "latitude": 42.8423597,
+            "longitude": -71.5149115
+          }
+        },
+        {
+          "id": "2-17",
+          "stopNumber": 17,
+          "time": "08:01",
+          "location": "66 Amherst Rd",
+          "coordinates": {
+            "latitude": 42.8448779,
+            "longitude": -71.5145304
+          }
+        },
+        {
+          "id": "2-18",
+          "stopNumber": 18,
+          "time": "08:02",
+          "location": "83 Amherst Rd",
+          "coordinates": {
+            "latitude": 42.847109,
+            "longitude": -71.5212855
+          }
+        },
+        {
+          "id": "2-19",
+          "stopNumber": 19,
+          "time": "08:02",
+          "location": "91 Amherst Rd",
+          "coordinates": {
+            "latitude": 42.8475015,
+            "longitude": -71.5217328
+          }
+        },
+        {
+          "id": "2-20",
+          "stopNumber": 20,
+          "time": "08:05",
+          "location": "Naticook Rd / Danforth Rd",
+          "coordinates": {
+            "latitude": 42.8428196,
+            "longitude": -71.5242621
+          }
+        },
+        {
+          "id": "2-21",
+          "stopNumber": 21,
+          "time": "08:06",
+          "location": "Naticook Rd / Hassell Rd",
+          "coordinates": {
+            "latitude": 42.8413085,
+            "longitude": -71.52410499999999
+          }
+        },
+        {
+          "id": "2-22",
+          "stopNumber": 22,
+          "time": "08:07",
+          "location": "Naticook Rd / Hutchinson Rd",
+          "coordinates": {
+            "latitude": 42.8397789,
+            "longitude": -71.52407819999999
+          }
+        },
+        {
+          "id": "2-23",
+          "stopNumber": 23,
+          "time": "08:08",
+          "location": "Naticook Rd / Palmeri Dr./ Cummings",
+          "coordinates": {
+            "latitude": 42.8374197,
+            "longitude": -71.5243531
+          }
+        },
+        {
+          "id": "2-24",
+          "stopNumber": 24,
+          "time": "08:09",
+          "location": "53 Naticook Rd",
+          "coordinates": {
+            "latitude": 42.8359955,
+            "longitude": -71.5251875
+          }
+        },
+        {
+          "id": "2-25",
+          "stopNumber": 25,
+          "time": "08:10",
+          "location": "88 Naticook Rd",
+          "coordinates": {
+            "latitude": 42.8289385,
+            "longitude": -71.5270949
+          }
+        },
+        {
+          "id": "2-26",
+          "stopNumber": 26,
+          "time": "08:12",
+          "location": "129 Naticook Rd",
+          "coordinates": {
+            "latitude": 42.8227892,
+            "longitude": -71.5328313
+          }
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Route 3",
+      "stops": [
+        {
+          "id": "3-1",
+          "stopNumber": 1,
+          "time": "07:53",
+          "location": "Dena Ave. / Hawthorne Rd",
+          "coordinates": {
+            "latitude": 42.8213832,
+            "longitude": -71.5432026
+          }
+        },
+        {
+          "id": "3-2",
+          "stopNumber": 2,
+          "time": "07:54",
+          "location": "5 Erik St",
+          "coordinates": {
+            "latitude": 42.8192226,
+            "longitude": -71.542892
+          }
+        },
+        {
+          "id": "3-3",
+          "stopNumber": 3,
+          "time": "07:55",
+          "location": "26 Erik St",
+          "coordinates": {
+            "latitude": 42.8160236,
+            "longitude": -71.5452761
+          }
+        },
+        {
+          "id": "3-4",
+          "stopNumber": 4,
+          "time": "07:56",
+          "location": "30 Erik St",
+          "coordinates": {
+            "latitude": 42.81543680000001,
+            "longitude": -71.5459754
+          }
+        },
+        {
+          "id": "3-5",
+          "stopNumber": 5,
+          "time": "07:56",
+          "location": "32 Erik St",
+          "coordinates": {
+            "latitude": 42.8150704,
+            "longitude": -71.5463704
+          }
+        },
+        {
+          "id": "3-6",
+          "stopNumber": 6,
+          "time": "07:57",
+          "location": "45 Erik St.",
+          "coordinates": {
+            "latitude": 42.81329170000001,
+            "longitude": -71.5494968
+          }
+        },
+        {
+          "id": "3-7",
+          "stopNumber": 7,
+          "time": "07:57",
+          "location": "55 Erik St",
+          "coordinates": {
+            "latitude": 42.8117829,
+            "longitude": -71.5518383
+          }
+        },
+        {
+          "id": "3-8",
+          "stopNumber": 8,
+          "time": "07:58",
+          "location": "50 Erik",
+          "coordinates": {
+            "latitude": 42.8122853,
+            "longitude": -71.54957139999999
+          }
+        },
+        {
+          "id": "3-9",
+          "stopNumber": 9,
+          "time": "08:00",
+          "location": "54 Dahl Rd",
+          "coordinates": {
+            "latitude": 42.8160588,
+            "longitude": -71.547242
+          }
+        },
+        {
+          "id": "3-10",
+          "stopNumber": 10,
+          "time": "08:01",
+          "location": "48 Dahl Rd",
+          "coordinates": {
+            "latitude": 42.8172764,
+            "longitude": -71.5518502
+          }
+        },
+        {
+          "id": "3-11",
+          "stopNumber": 11,
+          "time": "08:02",
+          "location": "29 Dahl Rd",
+          "coordinates": {
+            "latitude": 42.8224923,
+            "longitude": -71.5494993
+          }
+        },
+        {
+          "id": "3-12",
+          "stopNumber": 12,
+          "time": "08:03",
+          "location": "14 Kyle",
+          "coordinates": {
+            "latitude": 42.8219866,
+            "longitude": -71.5480345
+          }
+        },
+        {
+          "id": "3-13",
+          "stopNumber": 13,
+          "time": "08:05",
+          "location": "39 Brek Dr.",
+          "coordinates": {
+            "latitude": 42.8216013,
+            "longitude": -71.54391249999999
+          }
+        },
+        {
+          "id": "3-14",
+          "stopNumber": 14,
+          "time": "08:05",
+          "location": "32 Brek Dr.",
+          "coordinates": {
+            "latitude": 42.8227348,
+            "longitude": -71.5416195
+          }
+        },
+        {
+          "id": "3-15",
+          "stopNumber": 15,
+          "time": "08:06",
+          "location": "24 Brek Dr.",
+          "coordinates": {
+            "latitude": 42.8242831,
+            "longitude": -71.5419561
+          }
+        },
+        {
+          "id": "3-16",
+          "stopNumber": 16,
+          "time": "08:07",
+          "location": "16 Brek Dr.",
+          "coordinates": {
+            "latitude": 42.8239063,
+            "longitude": -71.54421289999999
+          }
+        },
+        {
+          "id": "3-17",
+          "stopNumber": 17,
+          "time": "08:08",
+          "location": "7 Brek Dr.",
+          "coordinates": {
+            "latitude": 42.82215679999999,
+            "longitude": -71.5448167
+          }
+        },
+        {
+          "id": "3-18",
+          "stopNumber": 18,
+          "time": "08:10",
+          "location": "16 Dahl Rd",
+          "coordinates": {
+            "latitude": 42.8241279,
+            "longitude": -71.5484176
+          }
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Route 4",
+      "stops": [
+        {
+          "id": "4-1",
+          "stopNumber": 1,
+          "time": "07:40",
+          "location": "1 Riverside Dr",
+          "coordinates": {
+            "latitude": 42.8473894,
+            "longitude": -71.5369999
+          }
+        },
+        {
+          "id": "4-2",
+          "stopNumber": 2,
+          "time": "07:40",
+          "location": "6 Riverside Dr",
+          "coordinates": {
+            "latitude": 42.8482366,
+            "longitude": -71.5379519
+          }
+        },
+        {
+          "id": "4-3",
+          "stopNumber": 3,
+          "time": "07:41",
+          "location": "Davidson Rd / Piedmont",
+          "coordinates": {
+            "latitude": 42.8499506,
+            "longitude": -71.54190419999999
+          }
+        },
+        {
+          "id": "4-4",
+          "stopNumber": 4,
+          "time": "07:43",
+          "location": "4 Piedmont Ave",
+          "coordinates": {
+            "latitude": 42.8478079,
+            "longitude": -71.54228069999999
+          }
+        },
+        {
+          "id": "4-5",
+          "stopNumber": 5,
+          "time": "07:45",
+          "location": "167 Amherst Rd",
+          "coordinates": {
+            "latitude": 42.8473737,
+            "longitude": -71.5431083
+          }
+        },
+        {
+          "id": "4-6",
+          "stopNumber": 6,
+          "time": "07:46",
+          "location": "Amherst Rd / Tomasian / Fuller Mill Rd",
+          "coordinates": {
+            "latitude": 42.8448033,
+            "longitude": -71.54938609999999
+          }
+        },
+        {
+          "id": "4-7",
+          "stopNumber": 7,
+          "time": "07:47",
+          "location": "4 County Rd",
+          "coordinates": {
+            "latitude": 42.8384145,
+            "longitude": -71.56194099999999
+          }
+        },
+        {
+          "id": "4-8",
+          "stopNumber": 8,
+          "time": "07:48",
+          "location": "5 Savannah Way",
+          "coordinates": {
+            "latitude": 42.83916869999999,
+            "longitude": -71.5642976
+          }
+        },
+        {
+          "id": "4-9",
+          "stopNumber": 9,
+          "time": "07:48",
+          "location": "9 Savannah Way",
+          "coordinates": {
+            "latitude": 42.8401333,
+            "longitude": -71.5644305
+          }
+        },
+        {
+          "id": "4-10",
+          "stopNumber": 10,
+          "time": "07:49",
+          "location": "12 Springfield Cir.",
+          "coordinates": {
+            "latitude": 42.8447324,
+            "longitude": -71.5623846
+          }
+        },
+        {
+          "id": "4-11",
+          "stopNumber": 11,
+          "time": "07:50",
+          "location": "23 Springfield Cir",
+          "coordinates": {
+            "latitude": 42.847187,
+            "longitude": -71.560626
+          }
+        },
+        {
+          "id": "4-12",
+          "stopNumber": 12,
+          "time": "07:51",
+          "location": "28 Springfield Cir",
+          "coordinates": {
+            "latitude": 42.8471711,
+            "longitude": -71.5641535
+          }
+        },
+        {
+          "id": "4-13",
+          "stopNumber": 13,
+          "time": "07:52",
+          "location": "Springfield Cir / Rimmon Ct",
+          "coordinates": {
+            "latitude": 42.847334,
+            "longitude": -71.56518009999999
+          }
+        },
+        {
+          "id": "4-14",
+          "stopNumber": 14,
+          "time": "07:53",
+          "location": "45 Springfield Cir",
+          "coordinates": {
+            "latitude": 42.8444892,
+            "longitude": -71.5651924
+          }
+        },
+        {
+          "id": "4-15",
+          "stopNumber": 15,
+          "time": "07:53",
+          "location": "51 Springfield Cir",
+          "coordinates": {
+            "latitude": 42.8431581,
+            "longitude": -71.5651173
+          }
+        },
+        {
+          "id": "4-16",
+          "stopNumber": 16,
+          "time": "07:54",
+          "location": "22 Savannah Way",
+          "coordinates": {
+            "latitude": 42.84242920000001,
+            "longitude": -71.5645797
+          }
+        },
+        {
+          "id": "4-17",
+          "stopNumber": 17,
+          "time": "07:56",
+          "location": "102 Seavern's Bridge Rd",
+          "coordinates": {
+            "latitude": 42.833895,
+            "longitude": -71.56266099999999
+          }
+        },
+        {
+          "id": "4-18",
+          "stopNumber": 18,
+          "time": "07:58",
+          "location": "49 Seaverns Bridge Rd",
+          "coordinates": {
+            "latitude": 42.82024699999999,
+            "longitude": -71.5607227
+          }
+        },
+        {
+          "id": "4-19",
+          "stopNumber": 19,
+          "time": "07:59",
+          "location": "22 Seaverns Bridge Rd",
+          "coordinates": {
+            "latitude": 42.813232,
+            "longitude": -71.55938100000002
+          }
+        },
+        {
+          "id": "4-20",
+          "stopNumber": 20,
+          "time": "08:04",
+          "location": "12 Cramer Hill Rd",
+          "coordinates": {
+            "latitude": 42.8139978,
+            "longitude": -71.5554767
+          }
+        },
+        {
+          "id": "4-21",
+          "stopNumber": 21,
+          "time": "08:05",
+          "location": "Cramer Hill / Coles Rock Rd",
+          "coordinates": {
+            "latitude": 42.8143251,
+            "longitude": -71.5540419
+          }
+        },
+        {
+          "id": "4-22",
+          "stopNumber": 22,
+          "time": "08:06",
+          "location": "16 Seaverns Bridge Rd.",
+          "coordinates": {
+            "latitude": 42.8120576,
+            "longitude": -71.558397
+          }
+        },
+        {
+          "id": "4-23",
+          "stopNumber": 23,
+          "time": "08:06",
+          "location": "14 Seaverns Bridge Rd",
+          "coordinates": {
+            "latitude": 42.8104421,
+            "longitude": -71.5587157
+          }
+        },
+        {
+          "id": "4-24",
+          "stopNumber": 24,
+          "time": "08:07",
+          "location": "17A Seaverns Bridge Rd",
+          "coordinates": {
+            "latitude": 42.810939,
+            "longitude": -71.5570015
+          }
+        },
+        {
+          "id": "4-25",
+          "stopNumber": 25,
+          "time": "08:08",
+          "location": "9 Seaverns Bridge Rd",
+          "coordinates": {
+            "latitude": 42.8081268,
+            "longitude": -71.5562599
+          }
+        },
+        {
+          "id": "4-26",
+          "stopNumber": 26,
+          "time": "08:09",
+          "location": "P/U @ Merrimack Valley Baptist Church",
+          "coordinates": {
+            "latitude": 42.8052071,
+            "longitude": -71.5568663
+          }
+        },
+        {
+          "id": "4-27",
+          "stopNumber": 27,
+          "time": "08:14",
+          "location": "Continental Blvd / Bailey Ct",
+          "coordinates": {
+            "latitude": 42.8075537,
+            "longitude": -71.5297824
+          }
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Route 5",
+      "stops": [
+        {
+          "id": "5-1",
+          "stopNumber": 1,
+          "time": "07:44",
+          "location": "DW Hwy / Monument",
+          "coordinates": {
+            "latitude": 42.8529152,
+            "longitude": -71.4917154
+          }
+        },
+        {
+          "id": "5-2",
+          "stopNumber": 2,
+          "time": "07:45",
+          "location": "DW Hwy / Angelo Dr",
+          "coordinates": {
+            "latitude": 42.8529152,
+            "longitude": -71.4917154
+          }
+        },
+        {
+          "id": "5-3",
+          "stopNumber": 3,
+          "time": "07:46",
+          "location": "329  DW Dr.",
+          "coordinates": {
+            "latitude": 42.8434197,
+            "longitude": -71.49279
+          }
+        },
+        {
+          "id": "5-4",
+          "stopNumber": 4,
+          "time": "07:47",
+          "location": "76 Island Dr",
+          "coordinates": {
+            "latitude": 42.84853349999999,
+            "longitude": -71.4880723
+          }
+        },
+        {
+          "id": "5-5",
+          "stopNumber": 5,
+          "time": "07:47",
+          "location": "41 Island Dr",
+          "coordinates": {
+            "latitude": 42.8490447,
+            "longitude": -71.4895289
+          }
+        },
+        {
+          "id": "5-6",
+          "stopNumber": 6,
+          "time": "07:51",
+          "location": "404 DW Hwy",
+          "coordinates": {
+            "latitude": 42.8566769,
+            "longitude": -71.4917206
+          }
+        },
+        {
+          "id": "5-7",
+          "stopNumber": 7,
+          "time": "07:52",
+          "location": "1 Bretton",
+          "coordinates": {
+            "latitude": 42.8542575,
+            "longitude": -71.49456479999999
+          }
+        },
+        {
+          "id": "5-8",
+          "stopNumber": 8,
+          "time": "07:53",
+          "location": "Hillcrest / E. Chamberlain",
+          "coordinates": {
+            "latitude": 42.854897,
+            "longitude": -71.4961419
+          }
+        },
+        {
+          "id": "5-9",
+          "stopNumber": 9,
+          "time": "07:54",
+          "location": "2 Oak St",
+          "coordinates": {
+            "latitude": 42.8550331,
+            "longitude": -71.4942695
+          }
+        },
+        {
+          "id": "5-10",
+          "stopNumber": 10,
+          "time": "07:56",
+          "location": "366 DW - Trampoline Ent.",
+          "coordinates": {
+            "latitude": 42.8450292,
+            "longitude": -71.492742
+          }
+        },
+        {
+          "id": "5-11",
+          "stopNumber": 11,
+          "time": "07:57",
+          "location": "DW Highway/East Ridge Condos",
+          "coordinates": {
+            "latitude": 42.8529152,
+            "longitude": -71.4917154
+          }
+        },
+        {
+          "id": "5-12",
+          "stopNumber": 12,
+          "time": "07:59",
+          "location": "DW Hwy / Hoyt St.",
+          "coordinates": {
+            "latitude": 42.8420914,
+            "longitude": -71.4923391
+          }
+        },
+        {
+          "id": "5-13",
+          "stopNumber": 13,
+          "time": "08:03",
+          "location": "Camp Sargent / Nottingwood Lane",
+          "coordinates": {
+            "latitude": 42.8360936,
+            "longitude": -71.495727
+          }
+        },
+        {
+          "id": "5-14",
+          "stopNumber": 14,
+          "time": "08:03",
+          "location": "19 Camp Sargent Rd",
+          "coordinates": {
+            "latitude": 42.8354389,
+            "longitude": -71.49847129999999
+          }
+        },
+        {
+          "id": "5-15",
+          "stopNumber": 15,
+          "time": "08:04",
+          "location": "5 Whittier",
+          "coordinates": {
+            "latitude": 42.8327302,
+            "longitude": -71.5001625
+          }
+        },
+        {
+          "id": "5-16",
+          "stopNumber": 16,
+          "time": "08:05",
+          "location": "Whittier Rd / Cranston Cir",
+          "coordinates": {
+            "latitude": 42.8323285,
+            "longitude": -71.49802919999999
+          }
+        },
+        {
+          "id": "5-17",
+          "stopNumber": 17,
+          "time": "08:05",
+          "location": "Whittier Rd / Danville Cir",
+          "coordinates": {
+            "latitude": 42.831834,
+            "longitude": -71.49698959999999
+          }
+        },
+        {
+          "id": "5-18",
+          "stopNumber": 18,
+          "time": "08:06",
+          "location": "Whittier Rd / Englewood",
+          "coordinates": {
+            "latitude": 42.8308978,
+            "longitude": -71.4969626
+          }
+        },
+        {
+          "id": "5-19",
+          "stopNumber": 19,
+          "time": "08:07",
+          "location": "11 Arbor Rd",
+          "coordinates": {
+            "latitude": 42.8275333,
+            "longitude": -71.5081522
+          }
+        },
+        {
+          "id": "5-20",
+          "stopNumber": 20,
+          "time": "08:08",
+          "location": "11 Beech St",
+          "coordinates": {
+            "latitude": 42.8279744,
+            "longitude": -71.5092752
+          }
+        },
+        {
+          "id": "5-21",
+          "stopNumber": 21,
+          "time": "08:08",
+          "location": "20 Beech St.",
+          "coordinates": {
+            "latitude": 42.8268522,
+            "longitude": -71.50678789999999
+          }
+        },
+        {
+          "id": "5-22",
+          "stopNumber": 22,
+          "time": "08:09",
+          "location": "12 Douglas St.",
+          "coordinates": {
+            "latitude": 42.8278665,
+            "longitude": -71.5050172
+          }
+        },
+        {
+          "id": "5-23",
+          "stopNumber": 23,
+          "time": "08:09",
+          "location": "7 Douglas St",
+          "coordinates": {
+            "latitude": 42.8284897,
+            "longitude": -71.5055218
+          }
+        },
+        {
+          "id": "5-24",
+          "stopNumber": 24,
+          "time": "08:10",
+          "location": "Douglas St / Cedar Rd",
+          "coordinates": {
+            "latitude": 42.82951660000001,
+            "longitude": -71.5053047
+          }
+        },
+        {
+          "id": "5-25",
+          "stopNumber": 25,
+          "time": "08:11",
+          "location": "4 Cedar Rd",
+          "coordinates": {
+            "latitude": 42.83159269999999,
+            "longitude": -71.5033294
+          }
+        },
+        {
+          "id": "5-26",
+          "stopNumber": 26,
+          "time": "08:11",
+          "location": "Camp Sargent Rd / Mall Apt Pth",
+          "coordinates": {
+            "latitude": 42.8250593,
+            "longitude": -71.5122749
+          }
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Route 6",
+      "stops": [
+        {
+          "id": "6-1",
+          "stopNumber": 1,
+          "time": "07:39",
+          "location": "Cota Rd / Erla",
+          "coordinates": {
+            "latitude": 42.8600564,
+            "longitude": -71.52084630000002
+          }
+        },
+        {
+          "id": "6-2",
+          "stopNumber": 2,
+          "time": "07:40",
+          "location": "Cota / 2nd Sharon",
+          "coordinates": {
+            "latitude": 42.8598003,
+            "longitude": -71.5193217
+          }
+        },
+        {
+          "id": "6-3",
+          "stopNumber": 3,
+          "time": "07:40",
+          "location": "25 Cota Rd",
+          "coordinates": {
+            "latitude": 42.8610325,
+            "longitude": -71.516868
+          }
+        },
+        {
+          "id": "6-4",
+          "stopNumber": 4,
+          "time": "07:41",
+          "location": "39 Cota Rd.",
+          "coordinates": {
+            "latitude": 42.8615276,
+            "longitude": -71.5140878
+          }
+        },
+        {
+          "id": "6-5",
+          "stopNumber": 5,
+          "time": "07:41",
+          "location": "66 Cota Rd.",
+          "coordinates": {
+            "latitude": 42.8604148,
+            "longitude": -71.5107823
+          }
+        },
+        {
+          "id": "6-6",
+          "stopNumber": 6,
+          "time": "07:42",
+          "location": "77 Cota Rd",
+          "coordinates": {
+            "latitude": 42.8602389,
+            "longitude": -71.5131687
+          }
+        },
+        {
+          "id": "6-7",
+          "stopNumber": 7,
+          "time": "07:47",
+          "location": "15 Iris",
+          "coordinates": {
+            "latitude": 42.8593959,
+            "longitude": -71.5141063
+          }
+        },
+        {
+          "id": "6-8",
+          "stopNumber": 8,
+          "time": "07:48",
+          "location": "5 Iris Dr",
+          "coordinates": {
+            "latitude": 42.8583521,
+            "longitude": -71.5155905
+          }
+        },
+        {
+          "id": "6-9",
+          "stopNumber": 9,
+          "time": "07:49",
+          "location": "2 Penrose",
+          "coordinates": {
+            "latitude": 42.8575101,
+            "longitude": -71.5165375
+          }
+        },
+        {
+          "id": "6-10",
+          "stopNumber": 10,
+          "time": "07:50",
+          "location": "5 Penrose Ln",
+          "coordinates": {
+            "latitude": 42.8569812,
+            "longitude": -71.5177245
+          }
+        },
+        {
+          "id": "6-11",
+          "stopNumber": 11,
+          "time": "07:51",
+          "location": "5 Jade Rd",
+          "coordinates": {
+            "latitude": 42.8562008,
+            "longitude": -71.5153947
+          }
+        },
+        {
+          "id": "6-12",
+          "stopNumber": 12,
+          "time": "07:52",
+          "location": "89 Turkey Hill Rd",
+          "coordinates": {
+            "latitude": 42.855169,
+            "longitude": -71.51247169999999
+          }
+        },
+        {
+          "id": "6-13",
+          "stopNumber": 13,
+          "time": "07:52",
+          "location": "92 Turkey Hill Rd",
+          "coordinates": {
+            "latitude": 42.8541275,
+            "longitude": -71.5110858
+          }
+        },
+        {
+          "id": "6-14",
+          "stopNumber": 14,
+          "time": "07:53",
+          "location": "5 Eden St.",
+          "coordinates": {
+            "latitude": 42.8500749,
+            "longitude": -71.5085695
+          }
+        },
+        {
+          "id": "6-15",
+          "stopNumber": 15,
+          "time": "07:54",
+          "location": "Newton Rd / Bancroft",
+          "coordinates": {
+            "latitude": 42.8518471,
+            "longitude": -71.50877980000001
+          }
+        },
+        {
+          "id": "6-16",
+          "stopNumber": 16,
+          "time": "07:54",
+          "location": "Bancroft / Rutherford",
+          "coordinates": {
+            "latitude": 42.8521379,
+            "longitude": -71.507137
+          }
+        },
+        {
+          "id": "6-17",
+          "stopNumber": 17,
+          "time": "07:56",
+          "location": "3 Wildcat Falls",
+          "coordinates": {
+            "latitude": 42.8545351,
+            "longitude": -71.5071183
+          }
+        },
+        {
+          "id": "6-18",
+          "stopNumber": 18,
+          "time": "07:56",
+          "location": "7 Wildcat Falls",
+          "coordinates": {
+            "latitude": 42.8552996,
+            "longitude": -71.5069929
+          }
+        },
+        {
+          "id": "6-19",
+          "stopNumber": 19,
+          "time": "07:57",
+          "location": "John / Edward / Wildcat Falls",
+          "coordinates": {
+            "latitude": 42.8563498,
+            "longitude": -71.5054612
+          }
+        },
+        {
+          "id": "6-20",
+          "stopNumber": 20,
+          "time": "07:57",
+          "location": "8 John",
+          "coordinates": {
+            "latitude": 42.8156509,
+            "longitude": -71.5250396
+          }
+        },
+        {
+          "id": "6-21",
+          "stopNumber": 21,
+          "time": "07:58",
+          "location": "6 W. Chamberlain",
+          "coordinates": {
+            "latitude": 42.8552373,
+            "longitude": -71.5097724
+          }
+        },
+        {
+          "id": "6-22",
+          "stopNumber": 22,
+          "time": "07:59",
+          "location": "25 W. Chamberlain",
+          "coordinates": {
+            "latitude": 42.8532867,
+            "longitude": -71.5049538
+          }
+        },
+        {
+          "id": "6-23",
+          "stopNumber": 23,
+          "time": "07:59",
+          "location": "W Chamberlain/ Summit",
+          "coordinates": {
+            "latitude": 42.8544164,
+            "longitude": -71.5013489
+          }
+        },
+        {
+          "id": "6-24",
+          "stopNumber": 24,
+          "time": "08:00",
+          "location": "30 W. Chamberlain Rd",
+          "coordinates": {
+            "latitude": 42.8543601,
+            "longitude": -71.5036928
+          }
+        },
+        {
+          "id": "6-25",
+          "stopNumber": 25,
+          "time": "08:00",
+          "location": "22 W. Chamberlain Rd",
+          "coordinates": {
+            "latitude": 42.8537845,
+            "longitude": -71.5054162
+          }
+        },
+        {
+          "id": "6-26",
+          "stopNumber": 26,
+          "time": "08:02",
+          "location": "45 Meetinghouse Rd",
+          "coordinates": {
+            "latitude": 42.8513542,
+            "longitude": -71.52619059999999
+          }
+        },
+        {
+          "id": "6-27",
+          "stopNumber": 27,
+          "time": "08:03",
+          "location": "Meetinghouse/ Nathan Hale",
+          "coordinates": {
+            "latitude": 42.8532209,
+            "longitude": -71.52596489999999
+          }
+        },
+        {
+          "id": "6-28",
+          "stopNumber": 28,
+          "time": "08:03",
+          "location": "29 Meetinghouse Rd",
+          "coordinates": {
+            "latitude": 42.8539384,
+            "longitude": -71.5261055
+          }
+        },
+        {
+          "id": "6-29",
+          "stopNumber": 29,
+          "time": "08:04",
+          "location": "Fox Meadow / Riley",
+          "coordinates": {
+            "latitude": 42.855339,
+            "longitude": -71.52095600000001
+          }
+        },
+        {
+          "id": "6-30",
+          "stopNumber": 30,
+          "time": "08:05",
+          "location": "3 Fox Meadow",
+          "coordinates": {
+            "latitude": 42.8568816,
+            "longitude": -71.5208285
+          }
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Route 7",
+      "stops": [
+        {
+          "id": "7-1",
+          "stopNumber": 1,
+          "time": "07:47",
+          "location": "83 / 86 Turkey Hill Rd",
+          "coordinates": {
+            "latitude": 42.8557001,
+            "longitude": -71.5134183
+          }
+        },
+        {
+          "id": "7-2",
+          "stopNumber": 2,
+          "time": "07:50",
+          "location": "6 Sarah Dr",
+          "coordinates": {
+            "latitude": 42.8546099,
+            "longitude": -71.5143622
+          }
+        },
+        {
+          "id": "7-4",
+          "stopNumber": 4,
+          "time": "07:51",
+          "location": "22 Sarah Dr.",
+          "coordinates": {
+            "latitude": 42.8522543,
+            "longitude": -71.5187713
+          }
+        },
+        {
+          "id": "7-5",
+          "stopNumber": 5,
+          "time": "07:52",
+          "location": "Sarah Dr. / Craig Dr.",
+          "coordinates": {
+            "latitude": 42.8538483,
+            "longitude": -71.5173703
+          }
+        },
+        {
+          "id": "7-6",
+          "stopNumber": 6,
+          "time": "07:53",
+          "location": "33 Craig Dr.",
+          "coordinates": {
+            "latitude": 42.8492217,
+            "longitude": -71.52002329999999
+          }
+        },
+        {
+          "id": "7-7",
+          "stopNumber": 7,
+          "time": "07:54",
+          "location": "Craig Dr. / Kelly Wy",
+          "coordinates": {
+            "latitude": 42.8497141,
+            "longitude": -71.5174365
+          }
+        },
+        {
+          "id": "7-8",
+          "stopNumber": 8,
+          "time": "07:56",
+          "location": "1 Acacia",
+          "coordinates": {
+            "latitude": 42.8502971,
+            "longitude": -71.5127372
+          }
+        },
+        {
+          "id": "7-9",
+          "stopNumber": 9,
+          "time": "07:57",
+          "location": "8 Northwood Dr.",
+          "coordinates": {
+            "latitude": 42.8496168,
+            "longitude": -71.5127598
+          }
+        },
+        {
+          "id": "7-10",
+          "stopNumber": 10,
+          "time": "07:57",
+          "location": "14 Northwood",
+          "coordinates": {
+            "latitude": 42.84939929999999,
+            "longitude": -71.5141306
+          }
+        },
+        {
+          "id": "7-11",
+          "stopNumber": 11,
+          "time": "07:58",
+          "location": "18 Northwood",
+          "coordinates": {
+            "latitude": 42.8489294,
+            "longitude": -71.5148136
+          }
+        },
+        {
+          "id": "7-12",
+          "stopNumber": 12,
+          "time": "08:00",
+          "location": "14 Laurel St",
+          "coordinates": {
+            "latitude": 42.8470731,
+            "longitude": -71.5127859
+          }
+        },
+        {
+          "id": "7-13",
+          "stopNumber": 13,
+          "time": "08:00",
+          "location": "7 Laurel St",
+          "coordinates": {
+            "latitude": 42.848448,
+            "longitude": -71.5133922
+          }
+        },
+        {
+          "id": "7-14",
+          "stopNumber": 14,
+          "time": "08:01",
+          "location": "10 Candy Ln",
+          "coordinates": {
+            "latitude": 42.8490228,
+            "longitude": -71.5115374
+          }
+        },
+        {
+          "id": "7-15",
+          "stopNumber": 15,
+          "time": "08:03",
+          "location": "Wintergreen Dr./ Whitewood Ln. / Sycamore",
+          "coordinates": {
+            "latitude": 42.8479322,
+            "longitude": -71.5099621
+          }
+        },
+        {
+          "id": "7-16",
+          "stopNumber": 16,
+          "time": "08:03",
+          "location": "17 Wintergreen Dr.",
+          "coordinates": {
+            "latitude": 42.8464794,
+            "longitude": -71.508952
+          }
+        },
+        {
+          "id": "7-17",
+          "stopNumber": 17,
+          "time": "08:05",
+          "location": "45 Wintergreen Dr.",
+          "coordinates": {
+            "latitude": 42.8441536,
+            "longitude": -71.50934529999999
+          }
+        },
+        {
+          "id": "7-18",
+          "stopNumber": 18,
+          "time": "08:06",
+          "location": "136 Turkey Hill Rd",
+          "coordinates": {
+            "latitude": 42.84724629999999,
+            "longitude": -71.5056412
+          }
+        },
+        {
+          "id": "7-19",
+          "stopNumber": 19,
+          "time": "08:07",
+          "location": "146 Turkey Hill Rd",
+          "coordinates": {
+            "latitude": 42.8458479,
+            "longitude": -71.5040009
+          }
+        },
+        {
+          "id": "7-20",
+          "stopNumber": 20,
+          "time": "08:08",
+          "location": "Turkey Hill / Sunrise",
+          "coordinates": {
+            "latitude": 42.8449297,
+            "longitude": -71.5037117
+          }
+        },
+        {
+          "id": "7-21",
+          "stopNumber": 21,
+          "time": "08:09",
+          "location": "156 Turkey Hill Rd",
+          "coordinates": {
+            "latitude": 42.8438846,
+            "longitude": -71.50249769999999
+          }
+        },
+        {
+          "id": "7-22",
+          "stopNumber": 22,
+          "time": "08:09",
+          "location": "160 Turkey Hill Rd",
+          "coordinates": {
+            "latitude": 42.843142,
+            "longitude": -71.50147
+          }
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Route 8",
+      "stops": [
+        {
+          "id": "8-1",
+          "stopNumber": 1,
+          "time": "07:51",
+          "location": "Smith / Sentry Way",
+          "coordinates": {
+            "latitude": 42.8358213,
+            "longitude": -71.4926864
+          }
+        },
+        {
+          "id": "8-2",
+          "stopNumber": 2,
+          "time": "07:52",
+          "location": "DW Hwy / Residence @ DW",
+          "coordinates": {
+            "latitude": 42.8529152,
+            "longitude": -71.4917154
+          }
+        },
+        {
+          "id": "8-3",
+          "stopNumber": 3,
+          "time": "07:59",
+          "location": "Manchester St. / Bower's Landing",
+          "coordinates": {
+            "latitude": 42.7992962,
+            "longitude": -71.4870675
+          }
+        },
+        {
+          "id": "8-4",
+          "stopNumber": 4,
+          "time": "08:02",
+          "location": "Harris Pond Dr/ Bowers Landing",
+          "coordinates": {
+            "latitude": 42.7985425,
+            "longitude": -71.4748774
+          }
+        },
+        {
+          "id": "8-5",
+          "stopNumber": 5,
+          "time": "08:03",
+          "location": "Harris Pond/ Merrimack Dr",
+          "coordinates": {
+            "latitude": 42.79725699999999,
+            "longitude": -71.4746639
+          }
+        },
+        {
+          "id": "8-6",
+          "stopNumber": 6,
+          "time": "08:08",
+          "location": "125 DW Hwy",
+          "coordinates": {
+            "latitude": 42.8113118,
+            "longitude": -71.4892227
+          }
+        },
+        {
+          "id": "8-7",
+          "stopNumber": 7,
+          "time": "08:16",
+          "location": "Tinker Rd / Portside",
+          "coordinates": {
+            "latitude": 42.8040369,
+            "longitude": -71.51771579999999
+          }
+        },
+        {
+          "id": "8-8",
+          "stopNumber": 8,
+          "time": "08:19",
+          "location": "Tinker/Thornton's West",
+          "coordinates": {
+            "latitude": 42.8066562,
+            "longitude": -71.5076363
+          }
+        },
+        {
+          "id": "8-9",
+          "stopNumber": 9,
+          "time": "08:20",
+          "location": "82 Tinker Rd",
+          "coordinates": {
+            "latitude": 42.8030746,
+            "longitude": -71.5148511
+          }
+        },
+        {
+          "id": "8-10",
+          "stopNumber": 10,
+          "time": "08:20",
+          "location": "72 Tinker Rd",
+          "coordinates": {
+            "latitude": 42.8040914,
+            "longitude": -71.5171685
+          }
+        },
+        {
+          "id": "8-11",
+          "stopNumber": 11,
+          "time": "08:23",
+          "location": "Tinker Rd / Dunbarton",
+          "coordinates": {
+            "latitude": 42.8118644,
+            "longitude": -71.52960589999999
+          }
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Route 9",
+      "stops": [
+        {
+          "id": "9-1",
+          "stopNumber": 1,
+          "time": "07:43",
+          "location": "9 Cambridge Rd",
+          "coordinates": {
+            "latitude": 42.8214881,
+            "longitude": -71.5174266
+          }
+        },
+        {
+          "id": "9-2",
+          "stopNumber": 2,
+          "time": "07:44",
+          "location": "17 Cambridge Rd",
+          "coordinates": {
+            "latitude": 42.821973,
+            "longitude": -71.51830819999999
+          }
+        },
+        {
+          "id": "9-3",
+          "stopNumber": 3,
+          "time": "07:44",
+          "location": "27 Cambridge Rd",
+          "coordinates": {
+            "latitude": 42.8213894,
+            "longitude": -71.5199306
+          }
+        },
+        {
+          "id": "9-4",
+          "stopNumber": 4,
+          "time": "07:45",
+          "location": "33 Cambridge Rd",
+          "coordinates": {
+            "latitude": 42.8206817,
+            "longitude": -71.5204837
+          }
+        },
+        {
+          "id": "9-5",
+          "stopNumber": 5,
+          "time": "07:46",
+          "location": "Cambridge Rd / Ingham Rd",
+          "coordinates": {
+            "latitude": 42.8186575,
+            "longitude": -71.5229429
+          }
+        },
+        {
+          "id": "9-6",
+          "stopNumber": 6,
+          "time": "07:47",
+          "location": "7 Ingham Rd",
+          "coordinates": {
+            "latitude": 42.8188659,
+            "longitude": -71.5223724
+          }
+        },
+        {
+          "id": "9-7",
+          "stopNumber": 7,
+          "time": "07:50",
+          "location": "201 Naticook Rd",
+          "coordinates": {
+            "latitude": 42.8102313,
+            "longitude": -71.5386798
+          }
+        },
+        {
+          "id": "9-8",
+          "stopNumber": 8,
+          "time": "07:51",
+          "location": "4 Joey",
+          "coordinates": {
+            "latitude": 42.8093396,
+            "longitude": -71.5406917
+          }
+        },
+        {
+          "id": "9-9",
+          "stopNumber": 9,
+          "time": "07:51",
+          "location": "7 Joey",
+          "coordinates": {
+            "latitude": 42.81006929999999,
+            "longitude": -71.54037749999999
+          }
+        },
+        {
+          "id": "9-10",
+          "stopNumber": 10,
+          "time": "07:52",
+          "location": "7 Gail Rd",
+          "coordinates": {
+            "latitude": 42.81073689999999,
+            "longitude": -71.5392495
+          }
+        },
+        {
+          "id": "9-11",
+          "stopNumber": 11,
+          "time": "07:52",
+          "location": "14 Gail Rd",
+          "coordinates": {
+            "latitude": 42.8119329,
+            "longitude": -71.5406114
+          }
+        },
+        {
+          "id": "9-12",
+          "stopNumber": 12,
+          "time": "07:53",
+          "location": "Gail Rd / Curt Rd",
+          "coordinates": {
+            "latitude": 42.813434,
+            "longitude": -71.5418984
+          }
+        },
+        {
+          "id": "9-13",
+          "stopNumber": 13,
+          "time": "07:54",
+          "location": "41 Gail Rd",
+          "coordinates": {
+            "latitude": 42.815114,
+            "longitude": -71.5433335
+          }
+        },
+        {
+          "id": "9-14",
+          "stopNumber": 14,
+          "time": "07:55",
+          "location": "Jay Rd / Peter Rd",
+          "coordinates": {
+            "latitude": 42.8160387,
+            "longitude": -71.5427819
+          }
+        },
+        {
+          "id": "9-15",
+          "stopNumber": 15,
+          "time": "07:56",
+          "location": "23 Peter Rd",
+          "coordinates": {
+            "latitude": 42.8142425,
+            "longitude": -71.5405032
+          }
+        },
+        {
+          "id": "9-16",
+          "stopNumber": 16,
+          "time": "07:58",
+          "location": "Lamson Rd / May",
+          "coordinates": {
+            "latitude": 42.813147,
+            "longitude": -71.537627
+          }
+        },
+        {
+          "id": "9-17",
+          "stopNumber": 17,
+          "time": "07:59",
+          "location": "Lamson Rd / Westborn",
+          "coordinates": {
+            "latitude": 42.81407,
+            "longitude": -71.538845
+          }
+        },
+        {
+          "id": "9-18",
+          "stopNumber": 18,
+          "time": "08:00",
+          "location": "Lamson Rd / Sand Terr",
+          "coordinates": {
+            "latitude": 42.8163361,
+            "longitude": -71.5405244
+          }
+        },
+        {
+          "id": "9-19",
+          "stopNumber": 19,
+          "time": "08:00",
+          "location": "34 Lamson Dr",
+          "coordinates": {
+            "latitude": 42.8170036,
+            "longitude": -71.5420613
+          }
+        },
+        {
+          "id": "9-20",
+          "stopNumber": 20,
+          "time": "08:01",
+          "location": "40 Lamson",
+          "coordinates": {
+            "latitude": 42.81805730000001,
+            "longitude": -71.54122579999999
+          }
+        },
+        {
+          "id": "9-21",
+          "stopNumber": 21,
+          "time": "08:01",
+          "location": "Lamson Rd / Winchester Dr.",
+          "coordinates": {
+            "latitude": 42.8163322,
+            "longitude": -71.5387101
+          }
+        },
+        {
+          "id": "9-22",
+          "stopNumber": 22,
+          "time": "08:02",
+          "location": "57 Lamson",
+          "coordinates": {
+            "latitude": 42.8191576,
+            "longitude": -71.5366865
+          }
+        },
+        {
+          "id": "9-23",
+          "stopNumber": 23,
+          "time": "08:04",
+          "location": "Westborn Rd / May",
+          "coordinates": {
+            "latitude": 42.81574519999999,
+            "longitude": -71.5360536
+          }
+        },
+        {
+          "id": "9-24",
+          "stopNumber": 24,
+          "time": "08:05",
+          "location": "4 Winchester",
+          "coordinates": {
+            "latitude": 42.8150448,
+            "longitude": -71.53856929999999
+          }
+        },
+        {
+          "id": "9-25",
+          "stopNumber": 25,
+          "time": "08:05",
+          "location": "7 Winchester",
+          "coordinates": {
+            "latitude": 42.8159781,
+            "longitude": -71.5383394
+          }
+        },
+        {
+          "id": "9-26",
+          "stopNumber": 26,
+          "time": "08:07",
+          "location": "217 Naticook Rd",
+          "coordinates": {
+            "latitude": 42.8082807,
+            "longitude": -71.5412606
+          }
+        }
+      ]
+    }
+  ]
+}

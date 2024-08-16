@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DashboardView: View {
     @EnvironmentObject private var authManager: AuthenticationManager
+    @State private var routes: [Route] = []
     
     var body: some View {
         NavigationView {
@@ -20,6 +21,9 @@ struct DashboardView: View {
                 // Add quick access buttons or widgets here
                 NavigationLink(destination: RouteListView()) {
                     DashboardButton(title: "View Routes", systemImage: "list.bullet")
+                }
+                NavigationLink(destination: FavoriteRoutesView(routes: $routes)) {
+                                    DashboardButton(title: "Favorite Routes", systemImage: "star.fill")
                 }
                 
                 NavigationLink(destination: MapView()) {
