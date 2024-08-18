@@ -1,10 +1,3 @@
-//
-//  Home.swift
-//  StayBus
-//
-//  Created by Jason Zhu on 5/13/24.
-//
-
 import SwiftUI
 
 struct BeginView: View {
@@ -12,23 +5,14 @@ struct BeginView: View {
     
     var body: some View {
         TabView {
-            DashboardView()
-                .tabItem {
-                    Image(systemName: "house")
-                    Text("Home")
-                }
-            
-            RouteListView()
-                .tabItem {
-                    Image(systemName: "list.bullet")
-                    Text("Routes")
-                }
-            
-            MapView()
-                .tabItem {
-                    Image(systemName: "map")
-                    Text("Map")
-                }
+            NavigationView {
+                RouteListView()
+            }
+            .tabItem {
+                Image(systemName: "list.bullet")
+                Text("Routes")
+            }
+        
             
             ProfileView()
                 .tabItem {
