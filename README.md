@@ -1,6 +1,6 @@
 # StayBus
 
-StayBus is a bus tracking app built using Flutter, a cross-platform framework for mobile app development. This app allows users to track the real-time location of buses and provides estimated arrival times for their desired bus stops. With a user-friendly interface and intuitive design, StayBus aims to enhance the commuting experience for bus passengers.
+StayBus is a bus tracking app built using Swift, an iOS framework for mobile app development. This app allows users to track the real-time location of buses and provides estimated arrival times for their desired bus stops. With a user-friendly interface and intuitive design, StayBus aims to enhance the commuting experience for bus passengers.
 
 
 ## Features
