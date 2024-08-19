@@ -15,5 +15,3 @@ StayBus is a bus tracking app built using Flutter, a cross-platform framework fo
 ## Authors
 
 - [@jasonmeme](https://www.github.com/jasonmeme)
-- @Shikhar-Gupta24 
-
