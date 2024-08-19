@@ -98,7 +98,8 @@ struct RouteListView: View {
                           let stops = data["stops"] as? [[String: Any]] else {
                         return nil
                     }
-                    return Route(id: document.documentID, name: name, stops: stops.compactMap { StopModel(dictionary: $0, routeId: document.documentID) })
+                    let deviceID = data["deviceID"] as? String
+                    return Route(id: document.documentID, name: name, stops: stops.compactMap { StopModel(dictionary: $0, routeId: document.documentID) }, deviceID: deviceID)
                 } ?? []
                 self.isLoading = false
             }
@@ -185,6 +186,7 @@ struct Route: Identifiable, Hashable {
     let id: String
     let name: String
     let stops: [StopModel]
+    let deviceID: String?
     
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)

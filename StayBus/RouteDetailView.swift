@@ -1,17 +1,27 @@
 import SwiftUI
 import MapKit
+import Firebase
 
 struct RouteDetailView: View {
     @Binding var route: Route
     @State private var selectedStop: StopModel?
     @State private var directions: [MKRoute] = []
+    @State private var busLocation: CLLocationCoordinate2D?
+    @State private var isRouteOffline: Bool = false
+    @State private var lastUpdateTime: Date?
 
     var body: some View {
         GeometryReader { geometry in
             VStack(spacing: 0) {
-                MapView(route: route, directions: $directions, selectedStop: $selectedStop)
+                MapView(route: route, directions: $directions, selectedStop: $selectedStop, busLocation: $busLocation)
                     .frame(height: geometry.size.height * 0.55)
                 stopList
+                
+                if isRouteOffline {
+                    Text("Route is offline")
+                        .foregroundColor(.red)
+                        .padding()
+                }
             }
         }
         .navigationTitle(route.name)
@@ -20,6 +30,7 @@ struct RouteDetailView: View {
         }
         .onAppear {
             calculateRoute()
+            startBusLocationUpdates()
         }
     }
 
@@ -52,12 +63,49 @@ struct RouteDetailView: View {
             }
         }
     }
+    private func startBusLocationUpdates() {
+            guard let deviceID = route.deviceID else { return }
+            
+            let db = Firestore.firestore()
+            let docRef = db.collection("deviceLocations").document(deviceID)
+            
+            func fetchLocation() {
+                docRef.getDocument { (document, error) in
+                    if let document = document, document.exists {
+                        let data = document.data()
+                        if let latitude = data?["latitude"] as? Double,
+                           let longitude = data?["longitude"] as? Double,
+                           let lastUpdate = data?["lastUpdate"] as? Timestamp {
+                            
+                            let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+                            let updateTime = lastUpdate.dateValue()
+                            
+                            DispatchQueue.main.async {
+                                self.busLocation = location
+                                self.lastUpdateTime = updateTime
+                                self.isRouteOffline = Date().timeIntervalSince(updateTime) > 300 // 5 minutes
+                            }
+                        }
+                    } else {
+                        print("Document does not exist")
+                    }
+                }
+            }
+            
+            fetchLocation() // Initial fetch
+            
+            // Set up timer for periodic updates
+            Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { _ in
+                fetchLocation()
+            }
+        }
 }
 
 struct MapView: UIViewRepresentable {
     let route: Route
     @Binding var directions: [MKRoute]
     @Binding var selectedStop: StopModel?
+    @Binding var busLocation: CLLocationCoordinate2D?
 
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
@@ -67,8 +115,8 @@ struct MapView: UIViewRepresentable {
         if let firstStop = route.stops.first {
             let region = MKCoordinateRegion(
                 center: firstStop.coordinates,
-                latitudinalMeters: 500,
-                longitudinalMeters: 500
+                latitudinalMeters: 5000,
+                longitudinalMeters: 5000
             )
             mapView.setRegion(region, animated: false)
         }
@@ -81,14 +129,22 @@ struct MapView: UIViewRepresentable {
         uiView.removeOverlays(uiView.overlays)
         
         // Add stop annotations
-        let annotations = route.stops.map { stop -> MKPointAnnotation in
+        let stopAnnotations = route.stops.map { stop -> MKPointAnnotation in
             let annotation = MKPointAnnotation()
             annotation.coordinate = stop.coordinates
             annotation.title = "Stop \(stop.stopNumber)"
             annotation.subtitle = stop.location
             return annotation
         }
-        uiView.addAnnotations(annotations)
+        uiView.addAnnotations(stopAnnotations)
+        
+        // Add bus location annotation if available
+        if let busLocation = busLocation {
+            let busAnnotation = MKPointAnnotation()
+            busAnnotation.coordinate = busLocation
+            busAnnotation.title = "Bus Location"
+            uiView.addAnnotation(busAnnotation)
+        }
         
         // Add route overlays
         for direction in directions {
@@ -108,31 +164,24 @@ struct MapView: UIViewRepresentable {
         }
 
         func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-            guard let annotation = annotation as? MKPointAnnotation else { return nil }
-            
-            let identifier = "StopMarker"
-            var view: MKMarkerAnnotationView
-            
-            if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView {
-                dequeuedView.annotation = annotation
-                view = dequeuedView
+            if annotation.title == "Bus Location" {
+                let identifier = "BusMarker"
+                var view: MKMarkerAnnotationView
+                
+                if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView {
+                    dequeuedView.annotation = annotation
+                    view = dequeuedView
+                } else {
+                    view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                }
+                
+                view.markerTintColor = .blue
+                view.glyphImage = UIImage(systemName: "bus.fill")
+                return view
             } else {
-                view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-                view.canShowCallout = true
-                view.calloutOffset = CGPoint(x: -5, y: 5)
-                view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+                // Use the existing implementation for stop markers
+                return nil
             }
-            
-            view.markerTintColor = .red
-            view.glyphText = annotation.title?.components(separatedBy: " ").last
-            
-            return view
-        }
-
-        func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-            guard let annotation = view.annotation as? MKPointAnnotation,
-                  let stop = parent.route.stops.first(where: { $0.location == annotation.subtitle }) else { return }
-            parent.selectedStop = stop
         }
 
         func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
