@@ -7,13 +7,13 @@ struct RouteDetailView: View {
     @State private var selectedStop: StopModel?
     @State private var directions: [MKRoute] = []
     @State private var busLocation: CLLocationCoordinate2D?
-    @State private var isRouteOffline: Bool = false
+    @State private var isRouteOffline: Bool = true
     @State private var lastUpdateTime: Date?
 
     var body: some View {
         GeometryReader { geometry in
             VStack(spacing: 0) {
-                MapView(route: route, directions: $directions, selectedStop: $selectedStop, busLocation: $busLocation)
+                MapView(route: route, directions: $directions, selectedStop: $selectedStop, busLocation: $busLocation, isRouteOffline: $isRouteOffline)
                     .frame(height: geometry.size.height * 0.55)
                 stopList
                 
@@ -106,12 +106,12 @@ struct MapView: UIViewRepresentable {
     @Binding var directions: [MKRoute]
     @Binding var selectedStop: StopModel?
     @Binding var busLocation: CLLocationCoordinate2D?
+    @Binding var isRouteOffline: Bool
 
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
         mapView.delegate = context.coordinator
         
-        // Set initial region to focus on the first stop
         if let firstStop = route.stops.first {
             let region = MKCoordinateRegion(
                 center: firstStop.coordinates,
@@ -128,27 +128,36 @@ struct MapView: UIViewRepresentable {
         uiView.removeAnnotations(uiView.annotations)
         uiView.removeOverlays(uiView.overlays)
         
-        // Add stop annotations
-        let stopAnnotations = route.stops.map { stop -> MKPointAnnotation in
-            let annotation = MKPointAnnotation()
-            annotation.coordinate = stop.coordinates
-            annotation.title = "Stop \(stop.stopNumber)"
-            annotation.subtitle = stop.location
+        let stopAnnotations = route.stops.map { stop -> NumberedAnnotation in
+            let annotation = NumberedAnnotation(
+                coordinate: stop.coordinates,
+                title: "Stop \(stop.stopNumber)",
+                subtitle: stop.location,
+                number: stop.stopNumber
+            )
             return annotation
         }
         uiView.addAnnotations(stopAnnotations)
         
-        // Add bus location annotation if available
-        if let busLocation = busLocation {
+        if let busLocation = busLocation, !isRouteOffline {
             let busAnnotation = MKPointAnnotation()
             busAnnotation.coordinate = busLocation
             busAnnotation.title = "Bus Location"
             uiView.addAnnotation(busAnnotation)
         }
         
-        // Add route overlays
         for direction in directions {
             uiView.addOverlay(direction.polyline)
+        }
+        
+        if let busLocation = busLocation, !isRouteOffline {
+            let region = uiView.region
+            let span = MKCoordinateSpan(
+                latitudeDelta: max(region.span.latitudeDelta, 0.05),
+                longitudeDelta: max(region.span.longitudeDelta, 0.05)
+            )
+            let newRegion = MKCoordinateRegion(center: busLocation, span: span)
+            uiView.setRegion(newRegion, animated: true)
         }
     }
 
@@ -157,44 +166,121 @@ struct MapView: UIViewRepresentable {
     }
 
     class Coordinator: NSObject, MKMapViewDelegate {
-        var parent: MapView
+            var parent: MapView
 
-        init(_ parent: MapView) {
-            self.parent = parent
-        }
+            init(_ parent: MapView) {
+                self.parent = parent
+            }
 
-        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-            if annotation.title == "Bus Location" {
-                let identifier = "BusMarker"
-                var view: MKMarkerAnnotationView
-                
-                if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView {
-                    dequeuedView.annotation = annotation
-                    view = dequeuedView
-                } else {
-                    view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+                if let numberedAnnotation = annotation as? NumberedAnnotation {
+                    let identifier = "NumberedStopMarker"
+                    let view: NumberedMarkerView
+                    
+                    if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? NumberedMarkerView {
+                        dequeuedView.annotation = numberedAnnotation
+                        view = dequeuedView
+                    } else {
+                        view = NumberedMarkerView(annotation: numberedAnnotation, reuseIdentifier: identifier)
+                    }
+                    
+                    view.number = numberedAnnotation.number
+                    view.canShowCallout = true
+                    return view
+                } else if annotation.title == "Bus Location" {
+                    let identifier = "BusMarker"
+                    var view: MKMarkerAnnotationView
+                    
+                    if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView {
+                        dequeuedView.annotation = annotation
+                        view = dequeuedView
+                    } else {
+                        view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                    }
+                    
+                    view.markerTintColor = .blue
+                    view.glyphImage = UIImage(systemName: "bus.fill")
+                    view.displayPriority = .required
+                    return view
                 }
                 
-                view.markerTintColor = .blue
-                view.glyphImage = UIImage(systemName: "bus.fill")
-                return view
-            } else {
-                // Use the existing implementation for stop markers
                 return nil
             }
-        }
 
         func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
             if let polyline = overlay as? MKPolyline {
                 let renderer = MKPolylineRenderer(polyline: polyline)
-                renderer.strokeColor = .blue
-                renderer.lineWidth = 3
+                renderer.strokeColor = UIColor(red: 64/255, green: 125/255, blue: 159/255, alpha: 1)  // #407D9F
+                renderer.lineWidth = 4
                 return renderer
             }
             return MKOverlayRenderer()
         }
     }
 }
+
+class NumberedAnnotation: NSObject, MKAnnotation {
+    let coordinate: CLLocationCoordinate2D
+    let title: String?
+    let subtitle: String?
+    let number: Int
+
+    init(coordinate: CLLocationCoordinate2D, title: String?, subtitle: String?, number: Int) {
+        self.coordinate = coordinate
+        self.title = title
+        self.subtitle = subtitle
+        self.number = number
+    }
+}
+
+class NumberedMarkerView: MKAnnotationView {
+    var number: Int = 0 {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+
+    override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
+        super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
+        self.frame = CGRect(x: 0, y: 0, width: 24, height: 24)  // Reduced size
+        self.backgroundColor = .clear  // Ensure transparent background
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    override func draw(_ rect: CGRect) {
+        guard let context = UIGraphicsGetCurrentContext() else { return }
+        
+        let circleRect = rect.insetBy(dx: 1, dy: 1)  // Slight inset to prevent edge clipping
+        
+        // Draw outer circle
+        context.setFillColor(UIColor(red: 64/255, green: 125/255, blue: 159/255, alpha: 1).cgColor)
+        context.fillEllipse(in: circleRect)
+        
+        // Draw inner circle
+        let inset = circleRect.insetBy(dx: 3, dy: 3)
+        context.setFillColor(UIColor.white.cgColor)
+        context.fillEllipse(in: inset)
+        
+        // Draw number
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: UIFont.boldSystemFont(ofSize: 12),  // Smaller font size
+            .foregroundColor: UIColor(red: 64/255, green: 125/255, blue: 159/255, alpha: 1)
+        ]
+        let numberString = "\(number)"
+        let size = numberString.size(withAttributes: attributes)
+        let point = CGPoint(x: rect.midX - size.width / 2, y: rect.midY - size.height / 2)
+        numberString.draw(at: point, withAttributes: attributes)
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        self.layer.borderWidth = 0  // Ensure no border is drawn
+    }
+}
+
 
 struct StopDetailView: View {
     let stop: StopModel

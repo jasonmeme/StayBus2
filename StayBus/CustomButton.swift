@@ -7,12 +7,18 @@
 
 import SwiftUI
 
-struct CustomButton: View {
-    let title: String
+struct CustomButton<Label: View>: View {
     let action: () -> Void
     let isPrimary: Bool
+    let label: Label
     
     @State private var isPressed = false
+    
+    init(action: @escaping () -> Void, isPrimary: Bool, @ViewBuilder label: () -> Label) {
+        self.action = action
+        self.isPrimary = isPrimary
+        self.label = label()
+    }
     
     var body: some View {
         Button(action: {
@@ -26,7 +32,7 @@ struct CustomButton: View {
             }
             self.action()
         }) {
-            Text(title)
+            label
                 .font(.system(size: 18, weight: .semibold, design: .default))
                 .foregroundColor(isPrimary ? .white : Color(hex: "#407D9F"))
                 .frame(height: 55)
@@ -39,5 +45,14 @@ struct CustomButton: View {
                 )
         }
         .scaleEffect(isPressed ? 0.95 : 1.0)
+    }
+}
+
+// Convenience initializer for text-only buttons
+extension CustomButton where Label == Text {
+    init(title: String, action: @escaping () -> Void, isPrimary: Bool) {
+        self.init(action: action, isPrimary: isPrimary) {
+            Text(title)
+        }
     }
 }

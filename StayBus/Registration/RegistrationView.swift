@@ -8,6 +8,8 @@
 import SwiftUI
 import Firebase
 
+import AuthenticationServices
+
 
 @MainActor
 final class RegistrationViewModel: ObservableObject {
@@ -95,6 +97,36 @@ struct RegistrationView: View {
                     }
                 }
             )
+            VStack(spacing: 15) {
+                            CustomButton(action: {
+                                authManager.signInWithGoogle()
+                            }, isPrimary: false) {
+                                HStack {
+                                    Image("google_logo")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 18, height: 18)
+                                    Text("Sign up with Google")
+                                        .font(.system(size: 20, weight: .semibold, design: .default))
+                                }
+                            }
+                            .background(Color.white)
+                            .cornerRadius(10)
+
+                            
+                            SignInWithAppleButton(
+                                .signUp,
+                                onRequest: { request in
+                                    request.requestedScopes = [.fullName, .email]
+                                },
+                                onCompletion: { _ in
+                                    authManager.signInWithApple()
+                                }
+                            )
+                            .frame(height: 55)
+                            .cornerRadius(10)
+                        }
+                        .padding(.top, 20)
             
             Spacer()
             
