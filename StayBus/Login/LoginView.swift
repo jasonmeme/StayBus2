@@ -38,11 +38,12 @@ struct LoginView: View {
     @Environment(\.dismiss) private var dismiss
     
     @State private var activeSheet: ActiveSheet?
+    @State private var showForgotPassword = false
         
         enum ActiveSheet: Identifiable {
             case googleSignIn
             case appleSignIn
-            
+            case forgotPassword
             var id: Int {
                 hashValue
             }
@@ -72,6 +73,14 @@ struct LoginView: View {
                 
                 SecureField("Password", text: $viewModel.password)
                     .textFieldStyle(ModernTextFieldStyle())
+                
+                HStack {
+                                    Spacer()
+                                    Button("Forgot Password?") {
+                                        activeSheet = .forgotPassword
+                                    }
+                                    .foregroundColor(Color(hex: "#407D9F"))
+                                }
             }
             .padding(.top, 20)
             
@@ -137,6 +146,8 @@ struct LoginView: View {
                         GoogleSignInView(authManager: _authManager)
                     case .appleSignIn:
                         AppleSignInView(authManager: authManager)
+                    case .forgotPassword:
+                        ForgotPassView()
                     }
                 }
         .padding(.horizontal, 40)
